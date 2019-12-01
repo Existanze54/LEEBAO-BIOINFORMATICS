@@ -4,10 +4,9 @@
 
 ## ДЕНЬ 02. ЗНАКОМСТВО С УЧАСТНИКАМИ ХАКАТОНА.<br/>ЗНАКОМСТВО С СИСТЕМОЙ LINUX
 
-**B**ourne **A**gain **SH**ell
+**BASH** = **B**ourne **A**gain **SH**ell
 
-![BASH](https://bashlogo.com/img/logo/png/full_colored_light.png width="240" height="180" border="10" )
-
+<img src="https://bashlogo.com/img/logo/png/full_colored_light.png" alt="BASH LOGO" width="240" height="180" border="10" />
 
 ### ОСНОВЫЕ КОМАНДЫ `BASH`
 
