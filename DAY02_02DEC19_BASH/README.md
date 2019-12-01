@@ -6,7 +6,7 @@
 
 **BASH** = **B**ourne **A**gain **SH**ell
 
-<img src="https://bashlogo.com/img/logo/png/full_colored_dark.png" alt="BASH LOGO" width="240" height="180" border="10" />
+![BASH LOGO](https://bashlogo.com/img/logo/png/full_colored_dark.png "BASH LOGO")
 
 ### ОСНОВЫЕ КОМАНДЫ `BASH`
 
