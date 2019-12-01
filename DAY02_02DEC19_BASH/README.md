@@ -6,7 +6,7 @@
 
 ![BASH LOGO](https://bashlogo.com/img/logo/png/full_colored_dark.png "BASH LOGO")
 
-### ОСНОВЫЕ КОМАНДЫ `BASH` (**B**ourne **A**gain **SH**ell)
+### ОСНОВЫЕ КОМАНДЫ `BASH` (`B`ourne `A`gain `SH`ell)
 
 | ФАЙЛЫ | ДИРЕКТОРИИ | СИСТЕМА | УПРАВЛЕНИЕ |
 | --------- | --------- | --------- | --------- |
