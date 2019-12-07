@@ -8,9 +8,11 @@
    A. [Установка Linux](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#a-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-linux%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D1%83-%D0%BD%D0%B0-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%B2-%D0%BD%D0%BE%D0%B2%D0%BE%D0%BC-%D0%BE%D0%BA%D0%BD%D0%B5)  
    B. [Настройка системы по умолчанию](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#b-%D0%BA%D0%B0%D0%BA-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-windows-10-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BE%D0%B9-%D0%BF%D0%BE-%D1%83%D0%BC%D0%BE%D0%BB%D1%87%D0%B0%D0%BD%D0%B8%D1%8E%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D1%83-%D0%BD%D0%B0-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%B2-%D0%BD%D0%BE%D0%B2%D0%BE%D0%BC-%D0%BE%D0%BA%D0%BD%D0%B5)  
    C. [Использование Virtual Box](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#c-%D0%B0%D0%BB%D1%8C%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D0%B0-%D0%B2%D1%81%D0%B5%D0%BC%D1%83-%D1%87%D1%82%D0%BE-%D0%B1%D1%8B%D0%BB%D0%BE-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BE-%D0%B2%D1%8B%D1%88%D0%B5--%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-virtual-box)  
-   D. [Настройка PROXY в Linux Ubuntu](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-proxy-%D0%B2-linux%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%B4%D0%BB%D1%8F-%D1%82%D0%B5%D1%85-%D0%BA%D1%82%D0%BE-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82%D1%81%D1%8F-%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D0%B5%D0%B9-%D1%81%D0%B5%D1%82%D1%8C%D1%8E-%D0%B4%D0%B2%D1%84%D1%83-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5-%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5)  
-   E. [Обновление системы Linux Ubuntu]()  
-   F. [Установка нужных пакетов Linux Ubuntu]()  
+   D. [Настройка PROXY в Linux Ubuntu](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#d-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-proxy-%D0%B2-linux%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%B4%D0%BB%D1%8F-%D1%82%D0%B5%D1%85-%D0%BA%D1%82%D0%BE-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82%D1%81%D1%8F-%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D0%B5%D0%B9-%D1%81%D0%B5%D1%82%D1%8C%D1%8E-%D0%B4%D0%B2%D1%84%D1%83-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5-%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B55)  
+   E. [Обновление системы Linux Ubuntu](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#e-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-linux-ubuntu)  
+   F. [Установка нужных пакетов Linux Ubuntu](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#f-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D1%8B%D1%85-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-linux-ubuntu)  
+   G. [Установка среды Anaconda в Linux Ubuntu]() 
+
 
 ### A. Установка Linux<br/>(открываем ссылку на видео в новом окне)
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=u5QyjHIYwTQE
@@ -126,7 +128,6 @@ ftp_proxy="http://myproxy.server.ru:????/"
 HTTP_PROXY="http://myproxy.server.ru:????/"
 HTTPS_PROXY="http://myproxy.server.ru:????/"
 FTP_PROXY="http://myproxy.server.ru:????/"
-
 ```
 4. Если строки исключения `no_proxy` отсутствуют, то их нужно тоже создать и добавить нужные адреса хостингов (здесь лишь привожу пример)
 ```
@@ -162,7 +163,7 @@ sudo snap set system proxy.https=http://myproxy.server.ru:????
 sudo apt-get update && sudo apt-get upgrade -y
 ``` 
 ### F. Установка программных пакетов для Linux Ubuntu
-##### Выполните следующие команды для установки пакетов <br/>(для запуска этой команды от вас потребуют пароль)
+##### Выполните следующие команды для установки пакетов<br/>(для запуска этой команды от вас потребуют пароль)
 ```
 sudo apt-get install -y curl unzip build-essential ncurses-dev
 sudo apt-get install -y byacc zlib1g-dev git cmake
@@ -198,7 +199,37 @@ sudo apt-get install -y libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
    `libxss1` - библиотека для расширений X11 Screen Saver  
    `libxcursor1` – библиотека управления курсором X  
    `libxcomposite1` – библиотека композитных расширений X11  
-   `libasound2-dev` - библиотека для приложений ALSA  
+   `libasound2` - библиотека для приложений ALSA  
    `libxi6` - библиотека расширения ввода X11  
    `libxtst6` - библиотека расширений записи X11 Testing  
-   
+
+### G. Установка среды Anaconda в Linux Ubuntu
+##### **ВНИМАНИЕ:** все примеры команд относятся к релизу октябрь 2019.<br/>При установке вам необходимо поменять название файла на последнюю версию Anaconda
+
+1. Скачайте установочный пакет Anaconda для Python 3 отсюда [https://www.anaconda.com/distribution](https://www.anaconda.com/distribution/#linux)
+```
+wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
+```
+2. Проверьте совместимость вашей системы с SHA-256
+```
+sha256sum /path/filename
+```
+3. Запустите установочный скрипт Anaconda из папки, куда он был скачан
+```
+bash ~/Downloads/Anaconda3-2019.10-Linux-x86_64.sh
+```
+4. Откройте лицензию, нажав `Enter`, и согласитесь с ее условиями, введя команду `yes`
+5. Инициализируйте среду Anaconda, введя команду `yes`
+6. Не устанавливайте PyCharm
+6. Перезапустите терминал 
+7. Деактивируйте базовую среду Anaconda через две команды
+```
+conda init
+conda config --set auto_activate_base False
+```
+8. Поздравляю, Вы успешно установили среду Anaconda! Проверьте ее функциональность, запустив команду `anaconda-navigator`
+
+
+
+
+
