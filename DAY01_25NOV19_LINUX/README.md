@@ -5,12 +5,14 @@
 ## **ДЕНЬ 01**. УСТАНОВКА LINUX. ОРГАНИЗАЦИОННЫЕ ВОПРОСЫ
 
 ## СОДЕРЖАНИЕ
-* [Установка Linux](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-linux%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D1%83-%D0%BD%D0%B0-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%B2-%D0%BD%D0%BE%D0%B2%D0%BE%D0%BC-%D0%BE%D0%BA%D0%BD%D0%B5)
-* [Настройка системы по умолчанию](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#%D0%BA%D0%B0%D0%BA-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-windows-10-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BE%D0%B9-%D0%BF%D0%BE-%D1%83%D0%BC%D0%BE%D0%BB%D1%87%D0%B0%D0%BD%D0%B8%D1%8E%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D1%83-%D0%BD%D0%B0-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%B2-%D0%BD%D0%BE%D0%B2%D0%BE%D0%BC-%D0%BE%D0%BA%D0%BD%D0%B5)
-* [Использование Virtual Box](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#%D0%B0%D0%BB%D1%8C%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D0%B0-%D0%B2%D1%81%D0%B5%D0%BC%D1%83-%D1%87%D1%82%D0%BE-%D0%B1%D1%8B%D0%BB%D0%BE-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BE-%D0%B2%D1%8B%D1%88%D0%B5--%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-virtual-box)
-* [Настройка PROXY в Linux]()
+* [A. Установка Linux](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-linux%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D1%83-%D0%BD%D0%B0-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%B2-%D0%BD%D0%BE%D0%B2%D0%BE%D0%BC-%D0%BE%D0%BA%D0%BD%D0%B5)
+* [B. Настройка системы по умолчанию](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#%D0%BA%D0%B0%D0%BA-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-windows-10-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BE%D0%B9-%D0%BF%D0%BE-%D1%83%D0%BC%D0%BE%D0%BB%D1%87%D0%B0%D0%BD%D0%B8%D1%8E%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D1%83-%D0%BD%D0%B0-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%B2-%D0%BD%D0%BE%D0%B2%D0%BE%D0%BC-%D0%BE%D0%BA%D0%BD%D0%B5)
+* [C. Использование Virtual Box](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#%D0%B0%D0%BB%D1%8C%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D0%B0-%D0%B2%D1%81%D0%B5%D0%BC%D1%83-%D1%87%D1%82%D0%BE-%D0%B1%D1%8B%D0%BB%D0%BE-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BE-%D0%B2%D1%8B%D1%88%D0%B5--%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-virtual-box)
+* [D. Настройка PROXY в Linux Ubuntu](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-proxy-%D0%B2-linux%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%B4%D0%BB%D1%8F-%D1%82%D0%B5%D1%85-%D0%BA%D1%82%D0%BE-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82%D1%81%D1%8F-%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D0%B5%D0%B9-%D1%81%D0%B5%D1%82%D1%8C%D1%8E-%D0%B4%D0%B2%D1%84%D1%83-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5-%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5)
+* [E. Обновление системы Linux Ubuntu]()
+* [F. Установка нужных пакетов Linux Ubuntu]()
 
-### Установка Linux<br/>(открываем ссылку на видео в новом окне)
+### A. Установка Linux<br/>(открываем ссылку на видео в новом окне)
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=u5QyjHIYwTQE
 " target="_blank"><img src="http://img.youtube.com/vi/u5QyjHIYwTQ/0.jpg" 
 alt="LINUX Installation" width="240" height="180" border="10" /></a>
@@ -82,7 +84,7 @@ alt="LINUX Installation" width="240" height="180" border="10" /></a>
    создаем и подтверждаем пароль  
 15. После завершения установки вынимаем флешку и перезагружаем компьютер
 
-### Как сделать Windows 10 системой по умолчанию<br/>(открываем ссылку на видео в новом окне)
+### B. Как сделать Windows 10 системой по умолчанию<br/>(открываем ссылку на видео в новом окне)
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Yp0dM-tsRl0
 " target="_blank"><img src="http://img.youtube.com/vi/Yp0dM-tsRl0/0.jpg" 
 alt="Windows Initiation" width="240" height="180" border="10" /></a>
@@ -101,7 +103,7 @@ sudo apt install grub-customizer
 6. Кликните `Save` и закройте приложение
 7. Перезагрузите компьютер - теперь по умолчанию должна загружаться система Windows
 
-### Альтернатива всему, что было описано выше – установка Virtual Box 
+### C. Альтернатива всему, что было описано выше – установка Virtual Box 
 * скачать и установить можно [отсюда](https://www.virtualbox.org/wiki/Downloads)
 * нужно взять образ диска с Linux (спросите у ребят на встрече)
 * импортируйте образ
@@ -110,7 +112,7 @@ sudo apt install grub-customizer
 * **ВНИМАНИЕ:** СИСТЕМА БУДЕТ ИНОГДА СИЛЬНО ТОРМОЗИТЬ И КАЖДЫЙ РАЗ ЗАГРУЖАТЬСЯ С НУЛЯ
 
 
-### Настройка PROXY в LINUX<br/>(нужно только для тех кто пользуется внутренней сетью ДВФУ, через проводное соединение)
+### D. Настройка PROXY в LINUX<br/>(нужно только для тех кто пользуется внутренней сетью ДВФУ, через проводное соединение)
 1. Откройте терминал
 2. Откройте для редактирования файл с переменными среды LINUX (пока не спрашивайте, что это такое)
 ```
@@ -154,3 +156,49 @@ Acquire {
 sudo snap set system proxy.http=http://myproxy.server.ru:????
 sudo snap set system proxy.https=http://myproxy.server.ru:????
 ``` 
+### E. Обновление системы Linux Ubuntu
+##### Выполните следующую команду в терминале<br/>(для запуска этой команды от вас потребуют пароль)
+```
+sudo apt-get update && sudo apt-get upgrade -y
+``` 
+### F. Установка программных пакетов для Linux Ubuntu
+##### Выполните следующие команды для установки пакетов <br/>(для запуска этой команды от вас потребуют пароль)
+```
+sudo apt-get install -y curl unzip build-essential ncurses-dev
+sudo apt-get install -y byacc zlib1g-dev git cmake
+sudo apt-get install -y default-jdk default-jre ant
+sudo apt-get install -y automake screen gcc pkg-config 
+sudo apt-get install -y libncurses5-dev sysstat libxml2-dev libz-dev
+sudo apt-get install -y libgl1-mesa-glx libegl1-mesa-dev libxrandr2 libxss1 
+sudo apt-get install -y libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+```
+##### Описание пакетов
+   `curl` - набор библиотек, в которых реализуются базовые возможности работы с URL страницами и передачи файлов. Библиотека поддерживает работу с протоколами: FTP, FTPS, HTTP, HTTPS, TFTP, SCP, SFTP, Telnet, DICT, LDAP, а также POP3, IMAP и SMTP.  
+   `unzip` - инструмент для сжатия файлов/каталогов  
+   `build-essential` - набор важных библиотек для компиляции программ  
+   `ncurses-dev` - библиотека для управления экраном и вводом-выводом на терминал  
+   `byacc` - YACC-совместимый парсер  
+   `zlib1g-dev` - библиотека для компрессии файлов  
+   `git` - система контроля версий  
+   `cmake` - контроллер компиляции и установки программ  
+   `default-jdk` - Java Development Kit  
+   `default-jre` - Java Runtime Environment  
+   `ant` - Apache Ant (инструмент сборки ПО на Java)  
+   `automake` - контроллер компиляции и установки программ  
+   `screen` - библиотека, позволяющая работать сразу в нескольких терминалах  
+   `gcc` - GNU Compiler Collection (коллекция компиляторов)  
+   `pkg-config` - настройка установленных библиотек  
+   `libncurses5-dev` - библиотека для управления экраном и вводом-выводом на терминал  
+   `sysstat` – инструменты производительности системы для Linux  
+   `libxml2-dev` - файлы разработки для XML-библиотеки GNOME  
+   `libz-dev` - библиотека для компрессии файлов  
+   `libgl1-mesa-glx` - OpenGL API - время выполнения GLX  
+   `libgl1-mesa-dev` - OpenGL API - время выполнения GLX  
+   `libxrandr2` - библиотека для расширений X11 RandR  
+   `libxss1` - библиотека для расширений X11 Screen Saver  
+   `libxcursor1` – библиотека управления курсором X  
+   `libxcomposite1` – библиотека композитных расширений X11  
+   `libasound2-dev` - библиотека для приложений ALSA  
+   `libxi6` - библиотека расширения ввода X11  
+   `libxtst6` - библиотека расширений записи X11 Testing  
+   
