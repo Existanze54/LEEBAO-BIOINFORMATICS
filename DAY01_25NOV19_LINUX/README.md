@@ -4,6 +4,12 @@
 
 ## **ДЕНЬ 01**. УСТАНОВКА LINUX. ОРГАНИЗАЦИОННЫЕ ВОПРОСЫ
 
+## СОДЕРЖАНИЕ
+* [Установка Linux](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-linux%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D1%83-%D0%BD%D0%B0-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%B2-%D0%BD%D0%BE%D0%B2%D0%BE%D0%BC-%D0%BE%D0%BA%D0%BD%D0%B5)
+* [Настройка системы по умолчанию](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#%D0%BA%D0%B0%D0%BA-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-windows-10-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BE%D0%B9-%D0%BF%D0%BE-%D1%83%D0%BC%D0%BE%D0%BB%D1%87%D0%B0%D0%BD%D0%B8%D1%8E%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D1%83-%D0%BD%D0%B0-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%B2-%D0%BD%D0%BE%D0%B2%D0%BE%D0%BC-%D0%BE%D0%BA%D0%BD%D0%B5)
+* [Использование Virtual Box](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#%D0%B0%D0%BB%D1%8C%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D0%B0-%D0%B2%D1%81%D0%B5%D0%BC%D1%83-%D1%87%D1%82%D0%BE-%D0%B1%D1%8B%D0%BB%D0%BE-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BE-%D0%B2%D1%8B%D1%88%D0%B5--%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-virtual-box)
+* [Настройка PROXY в Linux]()
+
 ### Установка Linux<br/>(открываем ссылку на видео в новом окне)
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=u5QyjHIYwTQE
 " target="_blank"><img src="http://img.youtube.com/vi/u5QyjHIYwTQ/0.jpg" 
@@ -103,3 +109,48 @@ sudo apt install grub-customizer
 * запустите
 * **ВНИМАНИЕ:** СИСТЕМА БУДЕТ ИНОГДА СИЛЬНО ТОРМОЗИТЬ И КАЖДЫЙ РАЗ ЗАГРУЖАТЬСЯ С НУЛЯ
 
+
+### Настройка PROXY в LINUX<br/>(нужно только для тех кто пользуется внутренней сетью ДВФУ, через проводное соединение)
+1. Откройте терминал
+2. Откройте для редактирования файл с переменными среды LINUX (пока не спрашивайте, что это такое)
+```
+sudo nano /etc/environment
+```
+3. В файле `environment` создайте новые строки следующего содержания, где `myproxy.server.ru:????` будет прокси адрес ДВФУ и соответствующий порт
+```
+http_proxy="http://myproxy.server.ru:????/"
+https_proxy="http://myproxy.server.ru:????/"
+ftp_proxy="http://myproxy.server.ru:????/"
+HTTP_PROXY="http://myproxy.server.ru:????/"
+HTTPS_PROXY="http://myproxy.server.ru:????/"
+FTP_PROXY="http://myproxy.server.ru:????/"
+
+```
+4. Если строки исключения `no_proxy` отсутствуют, то их нужно тоже создать и добавить нужные адреса хостингов (здесь лишь привожу пример)
+```
+no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+NO_PROXY="localhost,127.0.0.1,localaddress,.localdomain.com"
+```
+5. Выходим из нано и сохраняем файл, нажав `Ctr+X` и подтвердив изменения
+
+6. После перезапуска терминала у вас должны появиться новые переменные OS, которые можно увидеть через команды `env` или `echo $VAR`, где VAR - это название нужной переменной
+
+7. Установщик apt-get требует отдельных настроек для PROXY в специальном файле
+```
+sudo touch /etc/apt/apt.conf.d/proxy.conf
+sudo nano /etc/apt/apt.conf.d/proxy.conf
+```
+8. В файле `proxy.conf` создайте новые строки следующего содержания, где `myproxy.server.ru:????` будет прокси адрес ДВФУ и соответствующий порт
+```
+Acquire {
+    HTTP::proxy "http://myproxy.server.ru:????";  
+    HTTPS::proxy "http://myproxy.server.ru:????";  
+    FTP::proxy "http://myproxy.server.ru:????";  
+}
+```
+9. Выходим из нано и сохраняем файл, нажав `Ctr+X` и подтвердив изменения
+10. Тем, кто пользуется установщиком SNAP, будет также нужно выполнить следующие команды, где `myproxy.server.ru:????` будет прокси адрес ДВФУ и соответствующий порт
+```
+sudo snap set system proxy.http=http://myproxy.server.ru:????
+sudo snap set system proxy.https=http://myproxy.server.ru:????
+``` 
