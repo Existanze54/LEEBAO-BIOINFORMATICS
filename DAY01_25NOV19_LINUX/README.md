@@ -121,7 +121,7 @@ sudo apt install grub-customizer
 
 ### D. Настройка PROXY в LINUX<br/>(нужно только для тех кто пользуется внутренней сетью ДВФУ, через проводное соединение)
 
-![Linux LOGO](https://www.pngfind.com/pngs/m/201-2013937_linux-logo-png-crazy-penguin-transparent-png.png "Linux LOGO")
+![Linux LOGO](https://www.stickpng.com/assets/images/58480e82cef1014c0b5e4927.png "Linux LOGO")
 
 1. Откройте терминал
 2. Откройте для редактирования файл с переменными среды LINUX (пока не спрашивайте, что это такое)
@@ -220,6 +220,9 @@ sudo apt-get install -y xorg-dev apt-transport-https ca-certificates software-pr
 
 ![ANACONDA LOGO](https://upload.wikimedia.org/wikipedia/en/c/cd/Anaconda_Logo.png "ANACONDA LOGO")
 
+<img src="https://upload.wikimedia.org/wikipedia/en/c/cd/Anaconda_Logo.png" 
+alt="ANACONDA LOGO" width="480" border="10" />
+
 ##### ВНИМАНИЕ: все примеры команд относятся к релизу октябрь 2019.<br/>При установке вам необходимо поменять название файла на последнюю версию Anaconda
 
 1. Скачайте установочный пакет Anaconda для Python 3 отсюда [https://www.anaconda.com/distribution](https://www.anaconda.com/distribution/#linux)
@@ -275,7 +278,7 @@ sudo gdebi Brackets.Release.?????.64-bit.deb
 ```
 ### J. Установка текстового редактора Sublime Text 3
 
-![SUBLIME LOGO](https://external-preview.redd.it/V8_hh0roUKXHG1OMg0wOP8qdtvlAtzXYGZf8w1f2Nm4.png "SUBLIME LOGO")
+![SUBLIME LOGO](https://banner2.cleanpng.com/20180509/lqq/kisspng-sublime-text-text-editor-macos-source-code-editor-5af29e0e179d92.2809249515258496140967.jpg "SUBLIME LOGO")
 
 1. Скачайте и добавьте ключ к репозиторию Sublime 
 ```
