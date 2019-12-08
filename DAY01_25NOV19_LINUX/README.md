@@ -10,9 +10,11 @@
    C. [Использование Virtual Box](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#c-%D0%B0%D0%BB%D1%8C%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D0%B0-%D0%B2%D1%81%D0%B5%D0%BC%D1%83-%D1%87%D1%82%D0%BE-%D0%B1%D1%8B%D0%BB%D0%BE-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BE-%D0%B2%D1%8B%D1%88%D0%B5--%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-virtual-box)  
    D. [Настройка PROXY в Linux Ubuntu](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#d-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-proxy-%D0%B2-linux%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%B4%D0%BB%D1%8F-%D1%82%D0%B5%D1%85-%D0%BA%D1%82%D0%BE-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82%D1%81%D1%8F-%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D0%B5%D0%B9-%D1%81%D0%B5%D1%82%D1%8C%D1%8E-%D0%B4%D0%B2%D1%84%D1%83-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5-%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B55)  
    E. [Обновление системы Linux Ubuntu](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#e-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-linux-ubuntu)  
-   F. [Установка нужных пакетов Linux Ubuntu](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#f-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D1%8B%D1%85-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-linux-ubuntu)  
+   F. [Установка необходимых пакетов для Linux Ubuntu](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#f-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D1%8B%D1%85-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-linux-ubuntu)  
    G. [Установка среды Anaconda в Linux Ubuntu](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#g-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D1%81%D1%80%D0%B5%D0%B4%D1%8B-anaconda-%D0%B2-linux-ubuntu)  
-
+   H. [Установка интерпретатора языка R]()  
+   I. [Установка текстового редактора Brackets]()  
+   J. [Установка текстового редактора SUBLIME TEXT 3]()  
 
 ### A. Установка Linux<br/>(открываем ссылку на видео в новом окне)
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=u5QyjHIYwTQE
@@ -168,43 +170,48 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install -y curl unzip build-essential ncurses-dev
 sudo apt-get install -y byacc zlib1g-dev git cmake
 sudo apt-get install -y default-jdk default-jre ant
-sudo apt-get install -y automake screen gcc pkg-config 
+sudo apt-get install -y automake screen gcc pkg-config
 sudo apt-get install -y libncurses5-dev sysstat libxml2-dev libz-dev
-sudo apt-get install -y libgl1-mesa-glx libegl1-mesa-dev libxrandr2 libxss1 
+sudo apt-get install -y libgl1-mesa-glx libegl1-mesa-dev libxrandr2 libxss1 xorg-dev
 sudo apt-get install -y libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+sudo apt-get install -y xorg-dev apt-transport-https ca-certificates software-properties-common
 ```
 ##### Описание пакетов
-   `ant` – Apache Ant (инструмент сборки ПО на Java)   
-   `automake` – контроллер компиляции и установки программ   
-   `build-essential` – набор важных библиотек для компиляции программ   
-   `byacc` – YACC-совместимый парсер   
-   `cmake` – контроллер компиляции и установки программ   
-   `curl` – набор библиотек, в которых реализуются базовые возможности работы с URL страницами и передачи файлов. Библиотека поддерживает работу с протоколами: FTP, FTPS, HTTP, HTTPS, TFTP, SCP, SFTP, Telnet, DICT, LDAP, а также POP3, IMAP и SMTP.   
-   `default-jdk` – Java Development Kit   
-   `default-jre` – Java Runtime Environment   
-   `gcc` – GNU Compiler Collection (коллекция компиляторов)   
-   `git` – система контроля версий   
-   `libasound2` – библиотека для приложений ALSA   
-   `libgl1-mesa-dev` – OpenGL API – время выполнения GLX   
-   `libgl1-mesa-glx` – OpenGL API – время выполнения GLX   
-   `libncurses5-dev` – библиотека для управления экраном и вводом-выводом на терминал   
-   `libxcomposite1` – библиотека композитных расширений X11   
-   `libxcursor1` – библиотека управления курсором X   
-   `libxi6` – библиотека расширения ввода X11   
-   `libxml2-dev` – файлы разработки для XML-библиотеки GNOME   
-   `libxrandr2` – библиотека для расширений X11 RandR   
-   `libxss1` – библиотека для расширений X11 Screen Saver   
-   `libxtst6` – библиотека расширений записи X11 Testing   
-   `libz-dev` – библиотека для компрессии файлов   
-   `ncurses-dev` – библиотека для управления экраном и вводом-выводом на терминал   
-   `pkg-config` – настройка установленных библиотек   
-   `screen` – библиотека, позволяющая работать сразу в нескольких терминалах   
-   `sysstat` – инструменты производительности системы для Linux   
-   `unzip` – инструмент для сжатия файлов/каталогов   
-   `zlib1g-dev` – библиотека для компрессии файлов   
+   `ant` – Apache Ant (инструмент сборки ПО на Java)  
+   `apt-transport-https` – поддержка протокола https  
+   `automake` – контроллер компиляции и установки программ  
+   `build-essential` – набор важных библиотек для компиляции программ  
+   `byacc` – YACC-совместимый парсер  
+   `ca-certificates` – поддержка CA сертификатов  
+   `cmake` – контроллер компиляции и установки программ  
+   `curl` – набор библиотек, в которых реализуются базовые возможности работы с URL страницами и передачи файлов. Библиотека поддерживает работу с протоколами: FTP, FTPS, HTTP, HTTPS, TFTP, SCP, SFTP, Telnet, DICT, LDAP, а также POP3, IMAP и SMTP.  
+   `default-jdk` – Java Development Kit  
+   `default-jre` – Java Runtime Environment  
+   `gcc` – GNU Compiler Collection (коллекция компиляторов)  
+   `git` – система контроля версий  
+   `libasound2` – библиотека для приложений ALSA  
+   `libgl1-mesa-dev` – OpenGL API – время выполнения GLX  
+   `libgl1-mesa-glx` – OpenGL API – время выполнения GLX  
+   `libncurses5-dev` – библиотека для управления экраном и вводом-выводом на терминал  
+   `libxcomposite1` – библиотека композитных расширений X11  
+   `libxcursor1` – библиотека управления курсором X  
+   `libxi6` – библиотека расширения ввода X11  
+   `libxml2-dev` – файлы разработки для XML-библиотеки GNOME  
+   `libxrandr2` – библиотека для расширений X11 RandR  
+   `libxss1` – библиотека для расширений X11 Screen Saver  
+   `libxtst6` – библиотека расширений записи X11 Testing  
+   `libz-dev` – библиотека для компрессии файлов  
+   `ncurses-dev` – библиотека для управления экраном и вводом-выводом на терминал  
+   `pkg-config` – настройка установленных библиотек  
+   `screen` – библиотека, позволяющая работать сразу в нескольких терминалах  
+   `software-properties-common` – менеджер репозиториев программ  
+   `sysstat` – инструменты производительности системы для Linux  
+   `unzip` – инструмент для сжатия файлов/каталогов  
+   `xorg-dev` – инструмент для работы с окнами  
+   `zlib1g-dev` – библиотека для компрессии файлов  
 
 ### G. Установка среды Anaconda в Linux Ubuntu
-##### **ВНИМАНИЕ:** все примеры команд относятся к релизу октябрь 2019.<br/>При установке вам необходимо поменять название файла на последнюю версию Anaconda
+##### ВНИМАНИЕ: все примеры команд относятся к релизу октябрь 2019.<br/>При установке вам необходимо поменять название файла на последнюю версию Anaconda
 
 1. Скачайте установочный пакет Anaconda для Python 3 отсюда [https://www.anaconda.com/distribution](https://www.anaconda.com/distribution/#linux)
 ```
@@ -221,7 +228,7 @@ bash ~/Downloads/Anaconda3-2019.10-Linux-x86_64.sh
 4. Откройте лицензию, нажав `Enter`, и согласитесь с ее условиями, введя команду `yes`
 5. Инициализируйте среду Anaconda, введя команду `yes`
 6. Не устанавливайте PyCharm
-7. Перезапустите терминал 
+7. Перезапустите терминал
 8. Деактивируйте базовую среду Anaconda через две команды
 ```
 conda init
@@ -229,7 +236,42 @@ conda config --set auto_activate_base False
 ```
 9. Поздравляю, Вы успешно установили среду Anaconda! Проверьте ее функциональность, запустив команду `anaconda-navigator`
 
-
-
-
-
+### H. Установка интерпретатора языка R 
+##### Выполните по порядку следующие команды в терминале
+```
+sudo apt-get update -y
+sudo apt-get install -y libopenblas-base
+sudo apt-get install -y r-base
+sudo apt-get install -y r-base-dev
+```
+### I. Установка текстового редактора Brackets
+##### ВАРИАНТ1: установка через SNAP<br/>Выполните по порядку следующие команды в терминале
+```
+sudo apt-get update -y
+sudo apt-get install -y snapd
+sudo snap install brackets
+```
+##### ВАРИАНТ2: установка через скрипт инсталляции.<br/>
+Скачайте его здесь, кликнув на Download: [http://brackets.io](http://brackets.io)
+```
+sudo apt-get update -y
+sudo apt-get install -y gdebi-core
+sudo gdebi Brackets.Release.?????.64-bit.deb
+```
+### J. Установка текстового редактора Sublime Text 3
+1. Обновите apt-get и установите дополнительные пакеты
+```
+sudo apt-get update -y
+```
+2. Скачайте ключ к репозиторию Sublime 
+```
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+```
+3. Укажите путь к репозиторию SUBLIME
+```
+sudo apt-add-repository "deb https://download.sublimetext.com/ apt/stable/"
+```
+4. Установите Sublime Text 3
+```
+sudo apt install sublime-text
+```
