@@ -249,7 +249,7 @@ conda config --set auto_activate_base False
 
 ### H. Установка интерпретатора языка R 
 
-![R LOGO](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/500px-R_logo.svg.png "R LOGO")
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/500px-R_logo.svg.png" alt="R LOGO" width="360" border="10" />
 
 ##### Выполните по порядку следующие команды в терминале
 ```
@@ -260,7 +260,7 @@ sudo apt-get install -y r-base-dev
 ```
 ### I. Установка текстового редактора Brackets
 
-![BRACKETS LOGO](http://www.shawie.com/wp-content/uploads/2012/06/brackets.png "BRACKETS LOGO")
+<img src="http://www.shawie.com/wp-content/uploads/2012/06/brackets.png" alt="BRACKETS LOGO" width="360" border="10" />
 
 ##### ВАРИАНТ1: установка через SNAP<br/>Выполните по порядку следующие команды в терминале
 ```
@@ -277,7 +277,7 @@ sudo gdebi Brackets.Release.?????.64-bit.deb
 ```
 ### J. Установка текстового редактора Sublime Text 3
 
-![SUBLIME LOGO](https://banner2.cleanpng.com/20180509/lqq/kisspng-sublime-text-text-editor-macos-source-code-editor-5af29e0e179d92.2809249515258496140967.jpg "SUBLIME LOGO")
+<img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Sublime_Text_3_logo.png" alt="SUBLIME LOGO" width="360" border="10" />
 
 1. Скачайте и добавьте ключ к репозиторию Sublime 
 ```
