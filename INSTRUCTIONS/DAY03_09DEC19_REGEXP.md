@@ -6,14 +6,10 @@
 
 ## СОДЕРЖАНИЕ
 
-   A. [ОСНОВЫЕ КОМАНДЫ РЕГУЛЯРНЫХ ВЫРАЖЕНИЙ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-bash-bourne-again-shell)  
-   B. [ДАННЫЕ ДЛЯ ТРЕНИРОВКИ]()  
-     * [Названия видов]()  
-     * [Аминокислотные последовательности]()  
-     * [Географические координаты]()  
-     * [Журнал наблюдений]()  
+1. [ОСНОВЫЕ КОМАНДЫ РЕГУЛЯРНЫХ ВЫРАЖЕНИЙ]()
+2. [ДАННЫЕ ДЛЯ ТРЕНИРОВКИ]()
      
-### A. ОСНОВЫЕ КОМАНДЫ РЕГУЛЯРНЫХ ВЫРАЖЕНИЙ
+### 1. ОСНОВЫЕ КОМАНДЫ РЕГУЛЯРНЫХ ВЫРАЖЕНИЙ
 |ЯКОРЯ | СИМВОЛЫ | КВАНТОРЫ |
 | --------- | --------- | --------- |
 |`^` – начало строки | `\c` – управляющий символ | `*` – 0 или больше|
@@ -42,3 +38,11 @@
 ```
 ^ $ ( ) < > { } [ ] \ | . * + ?
 ```
+
+## 2. Данные для тренировки
+
+* [Названия видов](https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/species.txt)
+* [Аминокислотные последовательности](https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/proteins.fas)
+* [Географические координаты](https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/coordniates.txt)
+* [Журнал наблюдений](https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/observations.txt)
+
