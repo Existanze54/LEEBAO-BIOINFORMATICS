@@ -107,7 +107,10 @@ sudo apt install grub-customizer
 6. Кликните `Save` и закройте приложение
 7. Перезагрузите компьютер - теперь по умолчанию должна загружаться система Windows
 
-### C. Альтернатива всему, что было описано выше – установка Virtual Box 
+### C. Альтернатива всему, что было описано выше – установка Virtual Box
+
+![VirtualBox LOGO](https://miro.medium.com/max/480/1*wiP9VFaRE4AYP7_8JSnYcA.png "VirtualBox LOGO")
+
 * скачать и установить можно [отсюда](https://www.virtualbox.org/wiki/Downloads)
 * нужно взять образ диска с Linux (спросите у ребят на встрече)
 * импортируйте образ
@@ -117,6 +120,9 @@ sudo apt install grub-customizer
 
 
 ### D. Настройка PROXY в LINUX<br/>(нужно только для тех кто пользуется внутренней сетью ДВФУ, через проводное соединение)
+
+![Linux LOGO](https://www.pngfind.com/pngs/m/201-2013937_linux-logo-png-crazy-penguin-transparent-png.png "Linux LOGO")
+
 1. Откройте терминал
 2. Откройте для редактирования файл с переменными среды LINUX (пока не спрашивайте, что это такое)
 ```
@@ -241,7 +247,7 @@ conda config --set auto_activate_base False
 
 ### H. Установка интерпретатора языка R 
 
-![R LOGO](https://i7.pngguru.com/preview/627/163/660/programming-language-data-analysis-computer-programming-r.jpg "R LOGO")
+![R LOGO](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/500px-R_logo.svg.png "R LOGO")
 
 ##### Выполните по порядку следующие команды в терминале
 ```
