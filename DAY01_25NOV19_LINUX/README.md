@@ -2,7 +2,7 @@
 
 Хакатон по биоинформатике Лаборатории экологии и эволюционной биологии водных организмов ДВФУ
 
-## **ДЕНЬ 01**. УСТАНОВКА LINUX. ОРГАНИЗАЦИОННЫЕ ВОПРОСЫ
+## **ДЕНЬ 01**. УСТАНОВКА LINUX И ДРУГИХ ПРОГРАММ
 
 ## СОДЕРЖАНИЕ
    A. [Установка Linux](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#a-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-linux%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D1%83-%D0%BD%D0%B0-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%B2-%D0%BD%D0%BE%D0%B2%D0%BE%D0%BC-%D0%BE%D0%BA%D0%BD%D0%B5)  
@@ -110,7 +110,7 @@ sudo apt install grub-customizer
 ### C. Альтернатива всему, что было описано выше – установка Virtual Box
 
 <img src="https://miro.medium.com/max/480/1*wiP9VFaRE4AYP7_8JSnYcA.png" 
-alt="VirtualBox LOGO" width="360" border="10" />
+alt="VirtualBox LOGO" width="360" border="5" />
 
 * скачать и установить можно [отсюда](https://www.virtualbox.org/wiki/Downloads)
 * нужно взять образ диска с Linux (спросите у ребят на встрече)
@@ -125,11 +125,11 @@ alt="VirtualBox LOGO" width="360" border="10" />
 alt="Linux LOGO" width="240" border="10" />
 
 1. Откройте терминал
-2. Откройте для редактирования файл с переменными среды LINUX (пока не спрашивайте, что это такое)
+2. Откройте для редактирования файл с переменными среды LINUX (пока не спрашивайте про что это значит)
 ```
 sudo nano /etc/environment
 ```
-3. В файле `environment` создайте новые строки следующего содержания, где `myproxy.server.ru:????` будет прокси адрес ДВФУ и соответствующий порт
+3. В файле `environment` создайте новые строки следующего содержания, где `myproxy.server.ru:????` будет прокси адрес ДВФУ и соответствующий порт (спросите в группе, если вы не знаете)
 ```
 http_proxy="http://myproxy.server.ru:????/"
 https_proxy="http://myproxy.server.ru:????/"
