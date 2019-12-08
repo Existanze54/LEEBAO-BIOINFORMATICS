@@ -12,9 +12,9 @@
    E. [Обновление системы Linux Ubuntu](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#e-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-linux-ubuntu)  
    F. [Установка необходимых пакетов для Linux Ubuntu](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#f-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D1%8B%D1%85-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-linux-ubuntu)  
    G. [Установка среды Anaconda в Linux Ubuntu](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#g-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D1%81%D1%80%D0%B5%D0%B4%D1%8B-anaconda-%D0%B2-linux-ubuntu)  
-   H. [Установка интерпретатора языка R]()  
-   I. [Установка текстового редактора Brackets]()  
-   J. [Установка текстового редактора SUBLIME TEXT 3]()  
+   H. [Установка интерпретатора языка R](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#h-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BF%D1%80%D0%B5%D1%82%D0%B0%D1%82%D0%BE%D1%80%D0%B0-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0-r)  
+   I. [Установка текстового редактора Brackets](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#i-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B0-brackets)  
+   J. [Установка текстового редактора SUBLIME TEXT 3](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/DAY01_25NOV19_LINUX#j-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B0-sublime-text-3)  
 
 ### A. Установка Linux<br/>(открываем ссылку на видео в новом окне)
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=u5QyjHIYwTQE
@@ -211,6 +211,9 @@ sudo apt-get install -y xorg-dev apt-transport-https ca-certificates software-pr
    `zlib1g-dev` – библиотека для компрессии файлов  
 
 ### G. Установка среды Anaconda в Linux Ubuntu
+
+![ANACONDA LOGO](https://upload.wikimedia.org/wikipedia/en/c/cd/Anaconda_Logo.png "ANACONDA LOGO")
+
 ##### ВНИМАНИЕ: все примеры команд относятся к релизу октябрь 2019.<br/>При установке вам необходимо поменять название файла на последнюю версию Anaconda
 
 1. Скачайте установочный пакет Anaconda для Python 3 отсюда [https://www.anaconda.com/distribution](https://www.anaconda.com/distribution/#linux)
@@ -237,6 +240,9 @@ conda config --set auto_activate_base False
 9. Поздравляю, Вы успешно установили среду Anaconda! Проверьте ее функциональность, запустив команду `anaconda-navigator`
 
 ### H. Установка интерпретатора языка R 
+
+![R LOGO](https://i7.pngguru.com/preview/627/163/660/programming-language-data-analysis-computer-programming-r.jpg "R LOGO")
+
 ##### Выполните по порядку следующие команды в терминале
 ```
 sudo apt-get update -y
@@ -245,6 +251,9 @@ sudo apt-get install -y r-base
 sudo apt-get install -y r-base-dev
 ```
 ### I. Установка текстового редактора Brackets
+
+![BRACKETS LOGO](http://www.shawie.com/wp-content/uploads/2012/06/brackets.png "BRACKETS LOGO")
+
 ##### ВАРИАНТ1: установка через SNAP<br/>Выполните по порядку следующие команды в терминале
 ```
 sudo apt-get update -y
@@ -259,17 +268,20 @@ sudo apt-get install -y gdebi-core
 sudo gdebi Brackets.Release.?????.64-bit.deb
 ```
 ### J. Установка текстового редактора Sublime Text 3
-1. Обновите apt-get и установите дополнительные пакеты
-```
-sudo apt-get update -y
-```
-2. Скачайте ключ к репозиторию Sublime 
+
+![SUBLIME LOGO](https://external-preview.redd.it/V8_hh0roUKXHG1OMg0wOP8qdtvlAtzXYGZf8w1f2Nm4.png "SUBLIME LOGO")
+
+1. Скачайте и добавьте ключ к репозиторию Sublime 
 ```
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 ```
-3. Укажите путь к репозиторию SUBLIME
+2. Укажите путь к репозиторию Sublime
 ```
-sudo apt-add-repository "deb https://download.sublimetext.com/ apt/stable/"
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+```
+3. Обновите apt-get и установите дополнительные пакеты
+```
+sudo apt-get update -y
 ```
 4. Установите Sublime Text 3
 ```
