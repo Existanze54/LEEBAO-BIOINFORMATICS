@@ -6,14 +6,13 @@
 
 ## СОДЕРЖАНИЕ
 
-   A. [ОСНОВЫЕ КОМАНДЫ `BASH`](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#a-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-bash-bourne-again-shell)  
-   B. [ДАННЫЕ ДЛЯ ТРЕНИРОВКИ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#b-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8)  
+1. [ОСНОВЫЕ КОМАНДЫ `BASH`](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#a-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-bash-bourne-again-shell)
+2. [ДАННЫЕ ДЛЯ ТРЕНИРОВКИ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#b-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8)
+  * [Концентрация белков в пробах морской воды](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B1%D0%B5%D0%BB%D0%BA%D0%BE%D0%B2-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B1%D0%B0%D1%85-%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B9-%D0%B2%D0%BE%D0%B4%D1%8B)  
+  * [Динамика изменений углекислого газа в зависимости от разнообразия тундровых растительных сообществ на Аляске и в Швеции (Shaver et al., 2007)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D0%BA%D0%B0-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9-%D1%83%D0%B3%D0%BB%D0%B5%D0%BA%D0%B8%D1%81%D0%BB%D0%BE%D0%B3%D0%BE-%D0%B3%D0%B0%D0%B7%D0%B0-%D0%B2-%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8-%D0%BE%D1%82-%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%8F-%D1%82%D1%83%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D1%8B%D1%85-%D1%80%D0%B0%D1%81%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2-%D0%BD%D0%B0-%D0%B0%D0%BB%D1%8F%D1%81%D0%BA%D0%B5-%D0%B8-%D0%B2-%D1%88%D0%B2%D0%B5%D1%86%D0%B8%D0%B8-shaver-et-al-2007)
+  * [Нуклеотидные последовательности щетинкочелюстных (тип Chaetognatha)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#-%D0%BD%D1%83%D0%BA%D0%BB%D0%B5%D0%BE%D1%82%D0%B8%D0%B4%D0%BD%D1%8B%D0%B5-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D1%89%D0%B5%D1%82%D0%B8%D0%BD%D0%BA%D0%BE%D1%87%D0%B5%D0%BB%D1%8E%D1%81%D1%82%D0%BD%D1%8B%D1%85-%D1%82%D0%B8%D0%BF-chaetognatha)
 
-      • [Концентрация белков в пробах морской воды](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B1%D0%B5%D0%BB%D0%BA%D0%BE%D0%B2-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B1%D0%B0%D1%85-%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B9-%D0%B2%D0%BE%D0%B4%D1%8B)  
-      • [Динамика изменений углекислого газа в зависимости от разнообразия тундровых растительных сообществ на Аляске и в Швеции (Shaver et al., 2007)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D0%BA%D0%B0-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9-%D1%83%D0%B3%D0%BB%D0%B5%D0%BA%D0%B8%D1%81%D0%BB%D0%BE%D0%B3%D0%BE-%D0%B3%D0%B0%D0%B7%D0%B0-%D0%B2-%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8-%D0%BE%D1%82-%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%8F-%D1%82%D1%83%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D1%8B%D1%85-%D1%80%D0%B0%D1%81%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2-%D0%BD%D0%B0-%D0%B0%D0%BB%D1%8F%D1%81%D0%BA%D0%B5-%D0%B8-%D0%B2-%D1%88%D0%B2%D0%B5%D1%86%D0%B8%D0%B8-shaver-et-al-2007)  
-      • [Нуклеотидные последовательности щетинкочелюстных (тип Chaetognatha)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#-%D0%BD%D1%83%D0%BA%D0%BB%D0%B5%D0%BE%D1%82%D0%B8%D0%B4%D0%BD%D1%8B%D0%B5-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D1%89%D0%B5%D1%82%D0%B8%D0%BD%D0%BA%D0%BE%D1%87%D0%B5%D0%BB%D1%8E%D1%81%D1%82%D0%BD%D1%8B%D1%85-%D1%82%D0%B8%D0%BF-chaetognatha)  
-
-### A. ОСНОВЫЕ КОМАНДЫ `BASH` (`B`ourne `A`gain `SH`ell)
+### 1. ОСНОВЫЕ КОМАНДЫ `BASH` (`B`ourne `A`gain `SH`ell)
 
 <img src="https://bashlogo.com/img/logo/png/full_colored_dark.png" alt="BASH LOGO" width="360" border="5" />
 
@@ -51,7 +50,7 @@
    `$PATH` – путь запуска программ  
    `$SHELL` – имя консоли
 
-## B. Данные для тренировки
+## 2. Данные для тренировки
 
 #### • Концентрация белков в пробах морской воды
 
