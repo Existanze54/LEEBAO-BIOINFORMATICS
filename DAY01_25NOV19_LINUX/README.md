@@ -109,7 +109,8 @@ sudo apt install grub-customizer
 
 ### C. Альтернатива всему, что было описано выше – установка Virtual Box
 
-![VirtualBox LOGO](https://miro.medium.com/max/480/1*wiP9VFaRE4AYP7_8JSnYcA.png "VirtualBox LOGO")
+<img src="https://miro.medium.com/max/480/1*wiP9VFaRE4AYP7_8JSnYcA.png" 
+alt="VirtualBox LOGO" width="360" border="10" />
 
 * скачать и установить можно [отсюда](https://www.virtualbox.org/wiki/Downloads)
 * нужно взять образ диска с Linux (спросите у ребят на встрече)
@@ -118,10 +119,10 @@ sudo apt install grub-customizer
 * запустите
 * **ВНИМАНИЕ:** СИСТЕМА БУДЕТ ИНОГДА СИЛЬНО ТОРМОЗИТЬ И КАЖДЫЙ РАЗ ЗАГРУЖАТЬСЯ С НУЛЯ
 
-
 ### D. Настройка PROXY в LINUX<br/>(нужно только для тех кто пользуется внутренней сетью ДВФУ, через проводное соединение)
 
-![Linux LOGO](https://www.stickpng.com/assets/images/58480e82cef1014c0b5e4927.png "Linux LOGO")
+<img src="https://www.freepnglogos.com/uploads/linux-png/difference-between-linux-and-window-operating-system-3.png" 
+alt="Linux LOGO" width="360" border="10" />
 
 1. Откройте терминал
 2. Откройте для редактирования файл с переменными среды LINUX (пока не спрашивайте, что это такое)
@@ -218,10 +219,8 @@ sudo apt-get install -y xorg-dev apt-transport-https ca-certificates software-pr
 
 ### G. Установка среды Anaconda в Linux Ubuntu
 
-![ANACONDA LOGO](https://upload.wikimedia.org/wikipedia/en/c/cd/Anaconda_Logo.png "ANACONDA LOGO")
-
 <img src="https://upload.wikimedia.org/wikipedia/en/c/cd/Anaconda_Logo.png" 
-alt="ANACONDA LOGO" width="480" border="10" />
+alt="ANACONDA LOGO" width="360" border="10" />
 
 ##### ВНИМАНИЕ: все примеры команд относятся к релизу октябрь 2019.<br/>При установке вам необходимо поменять название файла на последнюю версию Anaconda
 
