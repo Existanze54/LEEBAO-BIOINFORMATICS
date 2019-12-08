@@ -2,9 +2,9 @@
 
 Хакатон по биоинформатике Лаборатории экологии и эволюционной биологии водных организмов ДВФУ
 
-## **ДЕНЬ 02**. ЗНАКОМСТВО С УЧАСТНИКАМИ ХАКАТОНА.<br/>ЗНАКОМСТВО С СИСТЕМОЙ LINUX
+## ДЕНЬ 02. ЗНАКОМСТВО С СИСТЕМОЙ LINUX И BASH
 
-![BASH LOGO](https://bashlogo.com/img/logo/png/full_colored_dark.png "BASH LOGO")
+<img src="https://bashlogo.com/img/logo/png/full_colored_dark.png" alt="BASH LOGO" width="360" border="5" />
 
 ### ОСНОВЫЕ КОМАНДЫ `BASH` (`B`ourne `A`gain `SH`ell)
 
