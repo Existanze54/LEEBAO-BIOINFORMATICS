@@ -122,7 +122,7 @@ alt="VirtualBox LOGO" width="360" border="10" />
 ### D. Настройка PROXY в LINUX<br/>(нужно только для тех кто пользуется внутренней сетью ДВФУ, через проводное соединение)
 
 <img src="https://www.freepnglogos.com/uploads/linux-png/difference-between-linux-and-window-operating-system-3.png" 
-alt="Linux LOGO" width="360" border="10" />
+alt="Linux LOGO" width="240" border="10" />
 
 1. Откройте терминал
 2. Откройте для редактирования файл с переменными среды LINUX (пока не спрашивайте, что это такое)
@@ -249,7 +249,7 @@ conda config --set auto_activate_base False
 
 ### H. Установка интерпретатора языка R 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/500px-R_logo.svg.png" alt="R LOGO" width="360" border="10" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/500px-R_logo.svg.png" alt="R LOGO" width="240" border="10" />
 
 ##### Выполните по порядку следующие команды в терминале
 ```
@@ -277,7 +277,7 @@ sudo gdebi Brackets.Release.?????.64-bit.deb
 ```
 ### J. Установка текстового редактора Sublime Text 3
 
-<img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Sublime_Text_3_logo.png" alt="SUBLIME LOGO" width="360" border="10" />
+<img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Sublime_Text_3_logo.png" alt="SUBLIME LOGO" width="120" border="10" />
 
 1. Скачайте и добавьте ключ к репозиторию Sublime 
 ```
