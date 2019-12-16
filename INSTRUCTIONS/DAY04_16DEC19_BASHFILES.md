@@ -6,9 +6,9 @@
 
 ## СОДЕРЖАНИЕ
 
-1. [РАЗМИНКА]()
-2. [УПРАЖНЕНИЯ]()
-3. [СЖАТИЕ ДАННЫХ]()
+1. [РАЗМИНКА](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY04_16DEC19_BASHFILES.md#1-%D1%80%D0%B0%D0%B7%D0%BC%D0%B8%D0%BD%D0%BA%D0%B0)
+2. [УПРАЖНЕНИЯ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY04_16DEC19_BASHFILES.md#2-%D1%83%D0%BF%D1%80%D0%B0%D0%B6%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F)
+3. [СЖАТИЕ ДАННЫХ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY04_16DEC19_BASHFILES.md#3-%D1%81%D0%B6%D0%B0%D1%82%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)
 4. [НАШ ПЕРВЫЙ СКРИПТ]()
 
 ### 1. РАЗМИНКА 
@@ -75,7 +75,7 @@ tar xzfv архив.tar.gz
 gunzip путь/к/файлу1.gz 
 ```
 
-4. НАШ ПЕРВЫЙ СКРИПТ
+### 4. НАШ ПЕРВЫЙ СКРИПТ
 ```
 mkdir TEST
 cd TEST
