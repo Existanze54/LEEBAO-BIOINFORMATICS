@@ -12,9 +12,8 @@
    E. [Обновление системы Linux Ubuntu](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY01_25NOV19_LINUX.md#e-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-linux-ubuntu)  
    F. [Установка необходимых пакетов для Linux Ubuntu](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY01_25NOV19_LINUX.md#f-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D1%8B%D1%85-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-linux-ubuntu)  
    G. [Установка среды Anaconda в Linux Ubuntu](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY01_25NOV19_LINUX.md#g-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D1%81%D1%80%D0%B5%D0%B4%D1%8B-anaconda-%D0%B2-linux-ubuntu)  
-   H. [Установка интерпретатора языка R](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY01_25NOV19_LINUX.md#h-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BF%D1%80%D0%B5%D1%82%D0%B0%D1%82%D0%BE%D1%80%D0%B0-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0-r)  
-   I. [Установка текстового редактора Brackets](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY01_25NOV19_LINUX.md#i-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B0-brackets)  
-   J. [Установка текстового редактора SUBLIME TEXT 3](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY01_25NOV19_LINUX.md#j-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B0-sublime-text-3)  
+   H. [Установка интерпретатора языка R](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY01_25NOV19_LINUX.md#h-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BF%D1%80%D0%B5%D1%82%D0%B0%D1%82%D0%BE%D1%80%D0%B0-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0-r)   
+   I. [Установка текстового редактора SUBLIME TEXT 3](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY01_25NOV19_LINUX.md#j-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B0-sublime-text-3)  
 
 ### A. Установка Linux<br/>(открываем ссылку на видео в новом окне)
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=u5QyjHIYwTQE
@@ -258,24 +257,8 @@ sudo apt-get install -y libopenblas-base
 sudo apt-get install -y r-base
 sudo apt-get install -y r-base-dev
 ```
-### I. Установка текстового редактора Brackets
 
-<img src="http://www.shawie.com/wp-content/uploads/2012/06/brackets.png" alt="BRACKETS LOGO" width="360" border="10" />
-
-##### ВАРИАНТ1: установка через SNAP<br/>Выполните по порядку следующие команды в терминале
-```
-sudo apt-get update -y
-sudo apt-get install -y snapd
-sudo snap install brackets
-```
-##### ВАРИАНТ2: установка через скрипт инсталляции.<br/>
-Скачайте его здесь, кликнув на Download: [http://brackets.io](http://brackets.io)
-```
-sudo apt-get update -y
-sudo apt-get install -y gdebi-core
-sudo gdebi Brackets.Release.?????.64-bit.deb
-```
-### J. Установка текстового редактора Sublime Text 3
+### I. Установка текстового редактора Sublime Text 3
 
 <img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Sublime_Text_3_logo.png" alt="SUBLIME LOGO" width="120" border="10" />
 
