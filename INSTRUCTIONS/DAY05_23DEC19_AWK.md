@@ -6,33 +6,36 @@
 
 ## СОДЕРЖАНИЕ
 
-1. [ОПРЕДЕЛЕНИЯ]()
-2. [СВОЙСТВА AWK]()
-3. [СИНТАКСИС AWK]()
-4. [КОМАНДЫ AWK]()
-5. [УПРАЖНЕНИЯ]()
+1. [ОПРЕДЕЛЕНИЯ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY05_23DEC19_AWK.md#1-%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F)
+2. [СВОЙСТВА AWK](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY05_23DEC19_AWK.md#2-%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0-awk)
+3. [СИНТАКСИС AWK](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY05_23DEC19_AWK.md#3-%D1%81%D0%B8%D0%BD%D1%82%D0%B0%D0%BA%D1%81%D0%B8%D1%81-awk)
+4. [ОПЦИИ AWK](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY05_23DEC19_AWK.md#4-%D0%BE%D0%BF%D1%86%D0%B8%D0%B8-awk)
+5. [РАБОТА с AWK](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY05_23DEC19_AWK.md#5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-awk)
+6. [ПРИМЕРЫ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY05_23DEC19_AWK.md#6-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B)
+7. [УПРАЖНЕНИЯ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY05_23DEC19_AWK.md#7-%D1%83%D0%BF%D1%80%D0%B0%D0%B6%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F)
+
+
 
 ### 1. ОПРЕДЕЛЕНИЯ
 
    **Регулярные выражения** – язык поиска шаблонов (англ. pattern – патерн) и осуществление манипуляций с текстовыми (строчными) данными, основанный на использовании специальных метасимволов, включая символы подстановки  
+
    **Символ подстановки** (англ. wildcard – символ-джокер) – метасимволы, используемые для поиска и замены текстовых (строчных) данных на основе шаблонов  
+
    **Парсинг** (от англ. parsing - "разбор") – жаргонный термин, который в компьютерной науке обозначает синтаксический анализ текстовых (строчных) типов данных и подобных структур, включая исходные коды различных языков программирования  
+
    **Команда** – условный термин, обозначающий руководство для действия в различных языках программирования  
+
    **AWK** – скриптовый язык для анализа текстовых (строчных) данных по заданным шаблонам, включая регулярные выражения  
 
 ### 2. СВОЙСТВА AWK
 
-* определение переменных
-* операции с числовыми и текстовыми данными
-* условные операторы и операторы цикла
-* вывод текстовых данных
-
 ##### A. Операции AWK
 
-   (a) Сканирует файл по строкам  
-   (b) Каждую строку разбивает на поля  
-   (c) Сравнивает строки или поля с заданными шаблонами  
-   (d) Выполняет действия с выбранными строками или полями  
+     (a) Сканирует файл по строкам  
+     (b) Каждую строку разбивает на поля  
+     (c) Сравнивает строки или поля с заданными шаблонами  
+     (d) Выполняет действия с выбранными строками или полями  
 
 ##### B. AWK парсинг
 
@@ -106,18 +109,18 @@ awk '{команда1 ; команда2; ...}'
 
 ### 6. ПРИМЕРЫ
 ```
-awk '{print "Hello world!"}'				# Ctr+D чтобы выйти из программы
-awk -F: '{print $1}' /etc/passwd			# смотрим все учетные записи в системе
-echo "Hello MASHA" | awk '{$2="PETYA"; print $0}'
-echo $PATH | awk -F: '{print $1}'
-awk -F: '{print $1,$NF}' /etc/passwd			# вывод первого и последнего поля
-awk 'NR==3, NR==6 {print NR,$0}' /etc/passwd			# вывод c 3 по 6 строку
+awk '{print "Hello world!"}'				# CTR+D ЧТОБЫ ВЫЙТИ ИЗ ПРОГРАММЫ
+awk -F: '{print $1}' /etc/passwd			# СМОТРИМ ВСЕ УЧЕТНЫЕ ЗАПИСИ В СИСТЕМЕ
+echo "Hello MASHA" | awk '{$2="PETYA"; print $0}'		# ЗАМЕНА В ТЕКСТЕ
+echo $PATH | awk -F: '{print $1}'		# ВЫВОД ПЕРВОГО ПОЛЯ
+awk -F: '{print $1,$NF}' /etc/passwd			# ВЫВОД ПЕРВОГО И ПОСЛЕДНЕГО ПОЛЯ
+awk 'NR==3, NR==6 {print NR,$0}' /etc/passwd		# ВЫВОД C 3 ПО 6 СТРОКУ
 ```
 
 ### 7. УПРАЖНЕНИЯ
 
-1. Напишите команду AWK, которая преобразует формат FASTA 'interleaved' в FASTA 'sequential' 
-2. Напишите команду AWK, которая преобразует формат FASTA 'sequential' в PHYLYP
-3. Напишите команду AWK, которая преобразует формат FASTA 'sequential' в NEXUS
+1. Напишите команду AWK, которая преобразует формат *FASTA interleaved* в *FASTA sequential* 
+2. Напишите команду AWK, которая преобразует формат *FASTA sequential* в *PHYLYP*
+3. Напишите команду AWK, которая преобразует формат *FASTA sequential* в *NEXUS*
 
 
