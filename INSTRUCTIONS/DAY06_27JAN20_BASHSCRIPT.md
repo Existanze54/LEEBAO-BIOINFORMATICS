@@ -6,12 +6,12 @@
 
 ## СОДЕРЖАНИЕ
 
-1. [СВОЙСТВА АЛГОРИТМОВ]()
-2. [ОПЕРАТОРЫ]()
+1. [СВОЙСТВА АЛГОРИТМОВ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY06_27JAN20_BASHSCRIPT.md#1-%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0-%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%BE%D0%B2-%D0%BF%D0%BE-%D0%B4-%D0%BA%D0%BD%D1%83%D1%82%D1%83)
+2. [ОПЕРАТОРЫ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY06_27JAN20_BASHSCRIPT.md#2-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B)
 
-   2.1 [Оператор присваивания (замещения)]()  
-   2.2 [Оператор сравнения (ветвления)]()  
-   2.3 [Оператор цикла FOR]()  
+   2.1 [Оператор присваивания (замещения)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY06_27JAN20_BASHSCRIPT.md#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D0%BF%D1%80%D0%B8%D1%81%D0%B2%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B7%D0%B0%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F)  
+   2.2 [Оператор сравнения (ветвления)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY06_27JAN20_BASHSCRIPT.md#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8%D0%BB%D0%B8-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F)  
+   2.3 [Оператор цикла FOR](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY06_27JAN20_BASHSCRIPT.md#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D1%86%D0%B8%D0%BA%D0%BB%D0%B0-for)  
 
 
 ### 1. СВОЙСТВА АЛГОРИТМОВ (по Д. Кнуту)
@@ -30,7 +30,7 @@
 
 Все приводимые ниже примеры скриптов необходимо сохранять в текстовый файл с расширением `.sh` и запускать через интерпретатор `BASH`
 
-##### Оператор присваивания (замещения)
+#### Оператор присваивания (замещения)
 
    переменная = выражение  
    переменная = значение  
@@ -45,7 +45,7 @@ echo $NAME1
 echo "${NAME1}!"
 ```
 
-##### Оператор сравнения (или оператор ветвления)
+#### Оператор сравнения (или оператор ветвления)
 
 **УСЛОВИЯ ДЛЯ ВЕТВЛЕНИЯ**
 
@@ -89,11 +89,11 @@ else echo "Тут никого нет" ;
 fi ;
 ```
 
-##### Оператор цикла FOR
+#### Оператор цикла FOR
 
 **БЛОК-СХЕМА С ИСПОЛЬЗОВАНИЕМ ОПЕРАТОРА ЦИКЛА FOR**
-<img src="https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/IMAGES/IF.png" 
-alt="IF operator" width="600" border="20" />
+<img src="https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/IMAGES/FOR.png" 
+alt="FOR operator" width="600" border="20" />
 
 **Выполнить для каждого файла по заданному пути**
 ```
