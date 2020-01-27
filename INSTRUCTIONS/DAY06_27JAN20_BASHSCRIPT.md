@@ -56,7 +56,7 @@ echo "$NAME1 и $NAME2 друзья"
    `-x ИМЯ` – существует такой файл с правами для записи  
 
 <img src="https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/IMAGES/IF.png" 
-alt="IF operator" width="360" border="10" />
+alt="IF operator" width="600" border="20" />
 
 
 ```
