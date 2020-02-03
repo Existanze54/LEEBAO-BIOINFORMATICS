@@ -9,9 +9,9 @@
 1. [СВОЙСТВА АЛГОРИТМОВ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY06_27JAN20_BASHSCRIPT.md#1-%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0-%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%BE%D0%B2-%D0%BF%D0%BE-%D0%B4-%D0%BA%D0%BD%D1%83%D1%82%D1%83)
 2. [ОПЕРАТОРЫ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY06_27JAN20_BASHSCRIPT.md#2-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B)
 
-   2.1 [Оператор присваивания (замещения)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY06_27JAN20_BASHSCRIPT.md#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D0%BF%D1%80%D0%B8%D1%81%D0%B2%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B7%D0%B0%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F)  
-   2.2 [Оператор сравнения (ветвления)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY06_27JAN20_BASHSCRIPT.md#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8%D0%BB%D0%B8-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F)  
-   2.3 [Оператор цикла FOR](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY06_27JAN20_BASHSCRIPT.md#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D1%86%D0%B8%D0%BA%D0%BB%D0%B0-for)  
+   2.1. [Оператор присваивания (замещения)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY06_27JAN20_BASHSCRIPT.md#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D0%BF%D1%80%D0%B8%D1%81%D0%B2%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B7%D0%B0%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F)  
+   2.2. [Оператор сравнения (ветвления)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY06_27JAN20_BASHSCRIPT.md#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8%D0%BB%D0%B8-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F)  
+   2.3. [Оператор цикла FOR](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY06_27JAN20_BASHSCRIPT.md#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D1%86%D0%B8%D0%BA%D0%BB%D0%B0-for)  
 
 
 ### 1. СВОЙСТВА АЛГОРИТМОВ (по Д. Кнуту)
@@ -57,11 +57,11 @@ echo "${NAME1}!"
    `[[ -z строка` – пустая строка (длина равна нулю)  
    `[[ СТРОКА1 == СТРОКА2 ]]` – строки равны  
    `[[ СТРОКА1 != СТРОКА2 ]]` – строки неравны  
-   `[[ ЧИСЛО1 -eq ЧИСЛО2 ]]` и `[[ ЧИСЛО1 == ЧИСЛО2 ]]` – целые числа равны  
-   `[[ ЧИСЛО1 -gt ЧИСЛО2 ]]` и `[[ ЧИСЛО1 > ЧИСЛО2 ]]` – целое число 1 больше числа 2  
-   `[[ ЧИСЛО1 -ge ЧИСЛО2 ]]` и `[[ ЧИСЛО1 >= ЧИСЛО2 ]]` – целое число 1 больше или равно числу 2  
-   `[[ ЧИСЛО1 -lt ЧИСЛО2 ]]` и `[[ ЧИСЛО1 < ЧИСЛО2 ]]` – целое число 1 меньше числа 2  
-   `[[ ЧИСЛО1 -le ЧИСЛО2 ]]` и `[[ ЧИСЛО1 <= ЧИСЛО2 ]]` – целое число 1 меньше или равно числу 2  
+   `[[ ЧИСЛО1 -eq ЧИСЛО2 ]]` или `[[ ЧИСЛО1 == ЧИСЛО2 ]]` – целые числа равны  
+   `[[ ЧИСЛО1 -gt ЧИСЛО2 ]]` или `[[ ЧИСЛО1 > ЧИСЛО2 ]]` – целое число 1 больше числа 2  
+   `[[ ЧИСЛО1 -ge ЧИСЛО2 ]]` или `[[ ЧИСЛО1 >= ЧИСЛО2 ]]` – целое число 1 больше или равно числу 2  
+   `[[ ЧИСЛО1 -lt ЧИСЛО2 ]]` или `[[ ЧИСЛО1 < ЧИСЛО2 ]]` – целое число 1 меньше числа 2  
+   `[[ ЧИСЛО1 -le ЧИСЛО2 ]]` или `[[ ЧИСЛО1 <= ЧИСЛО2 ]]` – целое число 1 меньше или равно числу 2  
    `[[ -d ИМЯ ]]` – существует такая директория  
    `[[ -h ИМЯ ]]` – существует такая гиперссылка  
    `[[ -e ИМЯ ]]` – существует такой файл  
@@ -93,7 +93,7 @@ fi ;
 
 **БЛОК-СХЕМА С ИСПОЛЬЗОВАНИЕМ ОПЕРАТОРА ЦИКЛА FOR**
 <img src="https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/IMAGES/FOR.png" 
-alt="FOR operator" width="600" border="20" />
+alt="FOR operator" width="480" border="20" />
 
 **Выполнить для каждого файла по заданному пути**
 ```
