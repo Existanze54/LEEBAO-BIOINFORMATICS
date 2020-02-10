@@ -13,3 +13,4 @@
 * [ДЕНЬ 05.](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY05_23DEC19_AWK.md) AWK ПАРСИНГ
 * [ДЕНЬ 06.](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY06_27JAN20_BASHSCRIPT.md) BASH СКРИПТИНГ
 * [ДЕНЬ 07.](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY07_03FEB20_EXERCISES.md) УПРАЖНЕНИЯ
+* [ДЕНЬ 08.](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY08_10FEB20_DATABASES.md) БАЗЫ ДАННЫХ
