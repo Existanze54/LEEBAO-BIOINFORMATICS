@@ -23,7 +23,49 @@
 * [Virus Pathogen Resource](https://www.viprbrc.org/)
 
 
-### Поля запросов NCBI
+### БАЗЫ ДАННЫХ NCBI
+
+| Имя базы NCBI | Описание |
+| --------- | --------- |
+| [`assembly`](https://www.ncbi.nlm.nih.gov/assembly) | Сборки | 
+| [`biocollections`](https://www.ncbi.nlm.nih.gov/biocollections) | Музейные коллекции | 
+| [`bioproject`](https://www.ncbi.nlm.nih.gov/bioproject) | Проекты | 
+| [`biosample`](https://www.ncbi.nlm.nih.gov/biosample) | Биологические материалы | 
+| [`biosystems`](https://www.ncbi.nlm.nih.gov/biosystems) | Биологические системы | 
+| [`books`](https://www.ncbi.nlm.nih.gov/books) | Книги | 
+| [`clinvar`](https://www.ncbi.nlm.nih.gov/clinvar) | Изменчивость генома человека | 
+| [`gap`](https://www.ncbi.nlm.nih.gov/gap) | Генотип и фенотип | 
+| [`dbvar`](https://www.ncbi.nlm.nih.gov/dbvar) | Структурная вариация | 
+| [`gene`](https://www.ncbi.nlm.nih.gov/gene) | Гены | 
+| [`genome`](https://www.ncbi.nlm.nih.gov/genome) | Геномы | 
+| [`gds`](https://www.ncbi.nlm.nih.gov/gds) | Экспрессия генов | 
+| [`geoprofiles`](https://www.ncbi.nlm.nih.gov/geoprofiles) | Индивидуальная экспрессия генов | 
+| [`gtr`](https://www.ncbi.nlm.nih.gov/gtr) | Генетические тесты | 
+| [`homologene`](https://www.ncbi.nlm.nih.gov/homologene) | Генные гомологи | 
+| [`ipg`](https://www.ncbi.nlm.nih.gov/geoprofiles) | Идентичные белки | 
+| [`medgen`](https://www.ncbi.nlm.nih.gov/medgen) | Медицинские данные |
+| [`mesh`](https://www.ncbi.nlm.nih.gov/mesh) | Медицинские термины |
+| [`ncbisearch`](https://www.ncbi.nlm.nih.gov/ncbisearch) | Сайт NCBI |
+| [`nlmcatalog`](https://www.ncbi.nlm.nih.gov/nlmcatalog) | National Library of Medicine |
+| [`nuccore`](https://www.ncbi.nlm.nih.gov/nuccore) | ГенБанк |
+| [`omim`](https://www.ncbi.nlm.nih.gov/omim) | Банк генетических заболеваний |
+| [`pmc`](https://www.ncbi.nlm.nih.gov/pmc) | Журналы PMC |
+| [`popset`](https://www.ncbi.nlm.nih.gov/popset) | Популяционные данные |
+| [`protein`](https://www.ncbi.nlm.nih.gov/protein) | Белки |
+| [`proteinclusters`](https://www.ncbi.nlm.nih.gov/proteinclusters) | Белковые кластеры |
+| [`pcassay`](https://www.ncbi.nlm.nih.gov/pcassay) | Активность веществ |
+| [`pccompound`](https://www.ncbi.nlm.nih.gov/pccompound) | Химические соединения |
+| [`pcsubstance`](https://www.ncbi.nlm.nih.gov/pcsubstance) | Химические вещества |
+| [`pubmed`](https://www.ncbi.nlm.nih.gov/pubmed) | Онлайн библиотека |
+| [`snp`](https://www.ncbi.nlm.nih.gov/snp) | Нуклеотидные полиморфизмы |
+| [`sparcle`](https://www.ncbi.nlm.nih.gov/sparcle) | Функциональная структура белков |
+| [`sra`](https://www.ncbi.nlm.nih.gov/sra) | Короткие последовательности |
+| [`structure`](https://www.ncbi.nlm.nih.gov/structure) | Структура макромолекул |
+| [`taxonomy`](https://www.ncbi.nlm.nih.gov/taxonomy) | Таксономия |
+| [`toolkit`](https://www.ncbi.nlm.nih.gov/toolkit) | Программы |
+
+
+### ПОЛЯ ЗАПРОСОВ NCBI
 
 | Имя Поля  | Аббревиатура | Функция | Базы NCBI |
 | --------- | --------- | --------- | --------- | 
@@ -53,7 +95,7 @@
 | `[TITL]` | `[VOL]` | Том | Все |
 
 
-### Упражнения
+### УПРАЖНЕНИЯ
 
 1. ENTREZ API
 
@@ -73,11 +115,11 @@ echo "export PATH=${PATH}:$HOME/PROGRAMS/EntrezDirect" >> $HOME/.profile
 cd EntrezDirect
 ./setup.sh
 ```
+* Перезапустите терминал
 * Проверьте установку, запустив несколько пробных команд
 ```
 esearch -version
 xtract -version
 esearch -db pubmed -query "Babalobi OO[au] AND 2008[pdat]" | 
-
 ```
 
