@@ -119,7 +119,7 @@ cd EntrezDirect
 * Проверьте установку, запустив несколько пробных команд
 ```
 esearch -version
+efetch -version
 xtract -version
-esearch -db pubmed -query "Babalobi OO[au] AND 2008[pdat]" | 
 ```
 
