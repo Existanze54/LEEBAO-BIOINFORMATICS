@@ -8,6 +8,7 @@
 
 1. [ОСНОВЫЕ КОМАНДЫ `BASH`](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#1-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-bash-bourne-again-shell)
 2. [УПРАЖНЕНИЯ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#2-%D1%83%D0%BF%D1%80%D0%B0%D0%B6%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F)
+
    А. [Вывод строки на экран](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B0-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%BD%D0%B0-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD)  
    Б. [Перемещение и операции с директориями](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B1-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D1%81-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D1%8F%D0%BC%D0%B8)  
    В. [Просмотр истории команд](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B2-%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4)  
@@ -69,16 +70,19 @@
 
 ### 2. УПРАЖНЕНИЯ
 
-##### А. Вывод строки на экран
+##### А. Вывод строк и значений переменных на экран
 ```
 echo "HELLO WORLD!"
+echo $USER					# ПОКАЗЫВАЕТ ИМЯ ПОЛЬЗОВАТЕЛЯ
+whoami					# ТОЖЕ ПОКАЗЫВАЕТ ИМЯ ПОЛЬЗОВАТЕЛЯ
+
 #**********************************************************************#
 ### САМОСТОЯТЕЛЬНО ВЫВЕДИТЕ НА ЭКРАН ВАШЕ ИМЯ
 ```
 
 ##### Б. Перемещение и операции с директориями
 ```
-pwd				# ПУТЬ К ТЕКУЩЕЙ (РАБОЧЕЙ) ДИРЕКТОРИИ
+pwd				# ПУТЬ К РАБОЧЕЙ (ТЕКУЩЕЙ) ДИРЕКТОРИИ
 echo $HOME			# ПУТь К ДОМАШНЕЙ ДИРЕКТОРИИ
 
 ls				# ПРОСМОТР СОДЕРЖИМОГО ДИРЕКТОРИИ
@@ -101,8 +105,8 @@ ls
 cd -				# ПЕРЕМЕЩЕНИЕ В ПРЕДЫДУЩУЮ ДИРЕКТОРИЮ
 #**********************************************************************#
 ### САМОСТОЯТЕЛЬНО ПЕРЕМЕСТИТЕСЬ В ДИРЕКТОРИЮ CLASS И ПРОВЕРЬТЕ ЕЕ СОДЕРЖИМОЕ
-cd .				# ТЕКУЩАЯ ПАПКА
-cd ..				# ПЕРЕМЕЩЕНИЕ В ПАПКУ УРОВНЕМ ВЫШЕ
+cd .				# РАБОЧАЯ (ТЕКУЩАЯ) ДИРЕКТОРИЯ
+cd ..				# ПЕРЕМЕЩЕНИЕ В ДИРЕКТОРИЮ УРОВНЕМ ВЫШЕ
 pwd
 ls
 ```
@@ -233,6 +237,61 @@ cat /etc/shells				# ВЫВОД НА ЭКРАН СПИСКА ВСЕХ ДОСТУ
 ### ЕСЛИ У ВАС СЕЙЧАС ПО УМОЛЧАНИЮ СТОИТ НЕ BASH
 ### ТО ИСПОЛЬЗУЙТЕ КОМАНДУ chsh -s /bin/bash
 ### И ПЕРЕЗАПУСТИТЕ КОНСОЛЬ
+```
+
+##### И. Скачивание файлов из сети
+```
+### СОЗДАЙТЕ И ПЕРЕМЕСТИТЕСЬ В ДИРЕКТОРИЮ CLASS
+### СКАЧИВАЕМ ФАЙЛ С ПОМОЩЬЮ КОМАНДЫ wget
+
+wget https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/shaver_etal.csv
+
+### ИЛИ ИСПОЛЬЗУЙТЕ CURL###
+
+### СОХРАНЕНИЕ ФАЙЛА ПОД ЕГО ИМЕНЕМ
+curl -O https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/shaver_etal.csv
+
+### СОХРАНЕНИЕ ФАЙЛА ПОД ДРУГИМ ИМЕНЕМ
+curl https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/shaver_etal.csv -o proba.txt
+
+### ВЫВОД ИНФОРМАЦИИ И СОХРАНЕНИЕ В ФАЙЛ
+curl https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/shaver_etal.csv 
+
+curl https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/shaver_etal.csv  > test.txt
+
+### СВОДКА ИНФОРМАЦИИ ПО ФАЙЛУ
+curl -I https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/shaver_etal.csv 
+
+rm test.txt proba.txt
+```
+
+##### Й. Работа с файловыми строками
+```
+cat shaver_etal.csv					# ВЫВОД ВСЕХ СТРОК
+head shaver_etal.csv				# ВЫВОД ПЕРВЫХ 10 СТРОК
+head -n2 shaver_etal.csv				# ВЫВОД ПЕРВЫХ 2 СТРОК
+tail -n2 shaver_etal.csv				# ВЫВОД ПОСЛЕДНИХ 5 СТРОК
+tail -n +2 shaver_etal.csv				# ВЫВОД ВСЕХ СТРОК КРОМЕ ПЕРВОЙ
+grep Toolik shaver_etal.csv				# ПОИСК СТРОК ПО ПАТТЕРНУ
+wc shaver_etal.csv					# СТАТИСТИКА ФАЙЛА
+wc -l shaver_etal.csv					# КОЛИЧЕСТВО СТРОК
+wc -w shaver_etal.csv					# КОЛИЧЕСТВО СЛОВ
+wc -с shaver_etal.csv					# КОЛИЧЕСТВО БУКВ
+sort shaver_etal.csv					# СОРТИРОВКА СТРОК
+cut -d, -f3 shaver_etal.csv					# РАЗДЕЛЕНИЕ И ВЫВОД СТОЛБЦОВ
+cut -d, -f3 shaver_etal.csv > test.txt
+uniq test.txt
+
+```
+
+##### К. Канализация вывода команд (pipe)
+```
+cat shaver_etal.csv | head
+cat shaver_etal.csv | wc -l
+cat shaver_etal.csv | cut -d, -f3 | head
+cat shaver_etal.csv | cut -d, -f3 | uniq
+cat shaver_etal.csv | cut -d, -f3 | sort | uniq
+cat shaver_etal.csv | cut -d, -f3 | sort | uniq | wc -l
 ```
 
 ### 3. ДАННЫЕ ДЛЯ ТРЕНИРОВКИ
