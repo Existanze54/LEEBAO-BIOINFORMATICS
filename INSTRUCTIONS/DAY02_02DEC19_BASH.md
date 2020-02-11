@@ -180,6 +180,9 @@ man pwd					# ОТКРЫТИЕ ФАЙЛА С ПОДРОБНОЙ ИНСТРУКЦ
 ### САМОСТОЯТЕЛЬНО ПРОВЕРЬТЕ ДЕЙСТВИЕ АРГУМЕНТОВ КОМАНДЫ ls, ПОЛЬЗУЯСЬ СПРАВКОЙ
 ls -l
 ls -a
+ls -F
+ls -s
+ls -S
 ls -al
 ls -alr
 ls -alh
@@ -244,54 +247,56 @@ cat /etc/shells				# ВЫВОД НА ЭКРАН СПИСКА ВСЕХ ДОСТУ
 ### СОЗДАЙТЕ И ПЕРЕМЕСТИТЕСЬ В ДИРЕКТОРИЮ CLASS
 ### СКАЧИВАЕМ ФАЙЛ С ПОМОЩЬЮ КОМАНДЫ wget
 
-wget https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/shaver_etal.csv
+wget https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/north-pacific-gyre/NENE01729B.txt
 
 ### ИЛИ ИСПОЛЬЗУЙТЕ CURL###
 
 ### СОХРАНЕНИЕ ФАЙЛА ПОД ЕГО ИМЕНЕМ
-curl -O https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/shaver_etal.csv
+curl -O https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/north-pacific-gyre/NENE01729B.txt
 
 ### СОХРАНЕНИЕ ФАЙЛА ПОД ДРУГИМ ИМЕНЕМ
-curl https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/shaver_etal.csv -o proba.txt
+curl https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/north-pacific-gyre/NENE01729B.txt -o proba.txt
 
 ### ВЫВОД ИНФОРМАЦИИ И СОХРАНЕНИЕ В ФАЙЛ
-curl https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/shaver_etal.csv 
+curl https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/north-pacific-gyre/NENE01729B.txt 
 
-curl https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/shaver_etal.csv  > test.txt
+curl https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/north-pacific-gyre/NENE01729B.txt > test.txt
 
 ### СВОДКА ИНФОРМАЦИИ ПО ФАЙЛУ
-curl -I https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/shaver_etal.csv 
+curl -I https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/north-pacific-gyre/NENE01729B.txt 
 
 rm test.txt proba.txt
+
+### ПОЛУЧЕНИЕ ДАННЫХ ИЗ ГЕННОГО БАНКА С ПОМОЩЬЮ КОМАНДЫ curl
+curl -s 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?id=AF086833.2&db=nuccore&rettype=fasta'
 ```
 
 ##### Й. Работа с файловыми строками
 ```
-cat shaver_etal.csv					# ВЫВОД ВСЕХ СТРОК
-head shaver_etal.csv				# ВЫВОД ПЕРВЫХ 10 СТРОК
-head -n2 shaver_etal.csv				# ВЫВОД ПЕРВЫХ 2 СТРОК
-tail -n2 shaver_etal.csv				# ВЫВОД ПОСЛЕДНИХ 5 СТРОК
-tail -n +2 shaver_etal.csv				# ВЫВОД ВСЕХ СТРОК КРОМЕ ПЕРВОЙ
-grep Toolik shaver_etal.csv				# ПОИСК СТРОК ПО ПАТТЕРНУ
-wc shaver_etal.csv					# СТАТИСТИКА ФАЙЛА
-wc -l shaver_etal.csv					# КОЛИЧЕСТВО СТРОК
-wc -w shaver_etal.csv					# КОЛИЧЕСТВО СЛОВ
-wc -с shaver_etal.csv					# КОЛИЧЕСТВО БУКВ
-sort shaver_etal.csv					# СОРТИРОВКА СТРОК
-cut -d, -f3 shaver_etal.csv					# РАЗДЕЛЕНИЕ И ВЫВОД СТОЛБЦОВ
-cut -d, -f3 shaver_etal.csv > test.txt
+cat NENE01729B.txt					# ВЫВОД ВСЕХ СТРОК
+head NENE01729B.txt				# ВЫВОД ПЕРВЫХ 10 СТРОК
+head -n2NENE01729B.txt				# ВЫВОД ПЕРВЫХ 2 СТРОК
+tail -n2 NENE01729B.txt				# ВЫВОД ПОСЛЕДНИХ 5 СТРОК
+tail -n +2 NENE01729B.txt				# ВЫВОД ВСЕХ СТРОК КРОМЕ ПЕРВОЙ
+grep Toolik NENE01729B.txt				# ПОИСК СТРОК ПО ПАТТЕРНУ
+wc NENE01729B.txt				# СТАТИСТИКА ФАЙЛА
+wc -l NENE01729B.txt					# КОЛИЧЕСТВО СТРОК
+wc -w NENE01729B.txt				# КОЛИЧЕСТВО СЛОВ
+wc -с NENE01729B.txt					# КОЛИЧЕСТВО БУКВ
+sort NENE01729B.txt					# СОРТИРОВКА СТРОК
+cut -d. -f1 NENE01729B.txt				# РАЗДЕЛЕНИЕ И ВЫВОД СТОЛБЦОВ
+cut -d. -f1 NENE01729B.txt > test.txt
 uniq test.txt
-
 ```
 
 ##### К. Канализация вывода команд (pipe)
 ```
-cat shaver_etal.csv | head
-cat shaver_etal.csv | wc -l
-cat shaver_etal.csv | cut -d, -f3 | head
-cat shaver_etal.csv | cut -d, -f3 | uniq
-cat shaver_etal.csv | cut -d, -f3 | sort | uniq
-cat shaver_etal.csv | cut -d, -f3 | sort | uniq | wc -l
+cat NENE01729B.txt | head
+cat NENE01729B.txt | wc -l
+cat NENE01729B.txt | cut -d. -f1 | head
+cat NENE01729B.txt | cut -d. -f1 | uniq
+cat NENE01729B.txt | cut -d. -f1 | sort | uniq
+cat NENE01729B.txt | cut -d. -f1 | sort | uniq | wc -l
 ```
 
 ### 3. ДАННЫЕ ДЛЯ ТРЕНИРОВКИ
