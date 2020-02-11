@@ -25,7 +25,7 @@
 
 ### БАЗЫ ДАННЫХ NCBI
 
-| Имя базы NCBI | Описание |
+|  NCBI | Описание |
 | --------- | --------- |
 | [`assembly`](https://www.ncbi.nlm.nih.gov/assembly) | Сборки | 
 | [`biocollections`](https://www.ncbi.nlm.nih.gov/biocollections) | Музейные коллекции | 
@@ -118,8 +118,9 @@ cd EntrezDirect
 * Перезапустите терминал
 * Проверьте установку, запустив несколько пробных команд
 ```
-esearch -version
-efetch -version
-xtract -version
+esearch -help
+efilter -help
+efetch -help
+xtract -help
 ```
 
