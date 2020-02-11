@@ -2,12 +2,22 @@
 
 Хакатон по биоинформатике Лаборатории экологии и эволюционной биологии водных организмов ДВФУ
 
-## ДЕНЬ 02. ЗНАКОМСТВО С СИСТЕМОЙ LINUX И BASH
+## ДЕНЬ 02. ЗНАКОМСТВО С СИСТЕМОЙ LINUX И КОНСОЛЬЮ BASH
 
 ## СОДЕРЖАНИЕ
 
 1. [ОСНОВЫЕ КОМАНДЫ `BASH`](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#1-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-bash-bourne-again-shell)
-2. [ДАННЫЕ ДЛЯ ТРЕНИРОВКИ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#2-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8)
+2. [УПРАЖНЕНИЯ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#2-%D1%83%D0%BF%D1%80%D0%B0%D0%B6%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F)
+   А. [Вывод строки на экран](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B0-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%BD%D0%B0-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD)  
+   Б. [Перемещение и операции с директориями](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B1-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D1%81-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D1%8F%D0%BC%D0%B8)  
+   В. [Просмотр истории команд](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B2-%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4)  
+   Г. [Создание и чтение файлов](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B3-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2)  
+   Д. [Символы подстановки (wildcards)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B4-%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%8B-%D0%BF%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8-wildcards)  
+   Е. [Вызов справки (help и man)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#e-%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2-%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8-help-%D0%B8-man)  
+   Ë. [Удаление папок и файлов](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%C3%AB-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BF%D0%BE%D0%BA-%D0%B8-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2)  
+   Ж. [Подстановки команд и меры предосторожности для новичков](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B6-%D0%BF%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4-%D0%B8-%D0%BC%D0%B5%D1%80%D1%8B-%D0%BF%D1%80%D0%B5%D0%B4%D0%BE%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B4%D0%BB%D1%8F-%D0%BD%D0%BE%D0%B2%D0%B8%D1%87%D0%BA%D0%BE%D0%B2)  
+   З. [Проверка типа консоли](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B7-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%82%D0%B8%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D0%B8)  
+3. [ДАННЫЕ ДЛЯ ТРЕНИРОВКИ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#3-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8)
     * [Концентрация белков в пробах морской воды](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#-%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B1%D0%B5%D0%BB%D0%BA%D0%BE%D0%B2-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B1%D0%B0%D1%85-%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B9-%D0%B2%D0%BE%D0%B4%D1%8B)  
     * [Динамика изменений углекислого газа в зависимости от разнообразия тундровых растительных сообществ на Аляске и в Швеции (Shaver et al., 2007)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#-%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D0%BA%D0%B0-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9-%D1%83%D0%B3%D0%BB%D0%B5%D0%BA%D0%B8%D1%81%D0%BB%D0%BE%D0%B3%D0%BE-%D0%B3%D0%B0%D0%B7%D0%B0-%D0%B2-%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8-%D0%BE%D1%82-%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%8F-%D1%82%D1%83%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D1%8B%D1%85-%D1%80%D0%B0%D1%81%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2-%D0%BD%D0%B0-%D0%B0%D0%BB%D1%8F%D1%81%D0%BA%D0%B5-%D0%B8-%D0%B2-%D1%88%D0%B2%D0%B5%D1%86%D0%B8%D0%B8-shaver-et-al-2007)
     * [Нуклеотидные последовательности щетинкочелюстных (тип Chaetognatha)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#-%D0%BD%D1%83%D0%BA%D0%BB%D0%B5%D0%BE%D1%82%D0%B8%D0%B4%D0%BD%D1%8B%D0%B5-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D1%89%D0%B5%D1%82%D0%B8%D0%BD%D0%BA%D0%BE%D1%87%D0%B5%D0%BB%D1%8E%D1%81%D1%82%D0%BD%D1%8B%D1%85-%D1%82%D0%B8%D0%BF-chaetognatha)
@@ -62,37 +72,37 @@
 ##### А. Вывод строки на экран
 ```
 echo "HELLO WORLD!"
-
+#******************************************************#
 ### САМОСТОЯТЕЛЬНО ВЫВЕДИТЕ НА ЭКРАН ВАШЕ ИМЯ
 ```
 
 ##### Б. Перемещение и операции с директориями
 ```
 pwd				# ПУТЬ К ТЕКУЩЕЙ (РАБОЧЕЙ) ДИРЕКТОРИИ
-echo $HOME		# ПУТь К ДОМАШНЕЙ ДИРЕКТОРИИ
+echo $HOME			# ПУТь К ДОМАШНЕЙ ДИРЕКТОРИИ
 
 ls				# ПРОСМОТР СОДЕРЖИМОГО ДИРЕКТОРИИ
-mkdir CLASS		# СОЗДАНИЕ НОВОЙ ДИРЕКТОРИИ
+mkdir CLASS			# СОЗДАНИЕ НОВОЙ ДИРЕКТОРИИ
 ls
-cd CLASS		# ПЕРЕМЕЩЕНИЕ В ДИРЕКТОРИЮ CLASS
+cd CLASS			# ПЕРЕМЕЩЕНИЕ В ДИРЕКТОРИЮ CLASS
 pwd
 ls
-
-cd ~			# ПЕРЕМЕЩЕНИЕ В ДОМАШНЮЮ ДИРЕКТОРИЮ
+#******************************************************#
+cd ~				# ПЕРЕМЕЩЕНИЕ В ДОМАШНЮЮ ДИРЕКТОРИЮ
 ls
-cd /			# ПЕРЕМЕЩЕНИЕ В КОРНЕВУЮ ДИРЕКТОРИЮ
+cd /				# ПЕРЕМЕЩЕНИЕ В КОРНЕВУЮ ДИРЕКТОРИЮ
 ls
 cd				# ПЕРЕМЕЩЕНИЕ В ДОМАШНЮЮ ДИРЕКТОРИЮ
 ls
-cd ~/Desktop	# ПЕРЕМЕЩЕНИЕ В ДИРЕКТОРИЮ РАБОЧЕГО СТОЛА
+cd ~/Desktop			# ПЕРЕМЕЩЕНИЕ В ДИРЕКТОРИЮ РАБОЧЕГО СТОЛА
 ls
-cd ~/Downloads	# ПЕРЕМЕЩЕНИЕ В ДИРЕКТОРИЮ DOWNLOADS
+cd ~/Downloads			# ПЕРЕМЕЩЕНИЕ В ДИРЕКТОРИЮ DOWNLOADS
 ls
-cd -			# ПЕРЕМЕЩЕНИЕ В ПРЕДЫДУЩУЮ ДИРЕКТОРИЮ
-
+cd -				# ПЕРЕМЕЩЕНИЕ В ПРЕДЫДУЩУЮ ДИРЕКТОРИЮ
+#******************************************************#
 ### САМОСТОЯТЕЛЬНО ПЕРЕМЕСТИТЕСЬ В ДИРЕКТОРИЮ CLASS И ПРОВЕРЬТЕ ЕЕ СОДЕРЖИМОЕ
-cd .			# ТЕКУЩАЯ ПАПКА
-cd ..			# ПЕРЕМЕЩЕНИЕ В ПАПКУ УРОВНЕМ ВЫШЕ
+cd .				# ТЕКУЩАЯ ПАПКА
+cd ..				# ПЕРЕМЕЩЕНИЕ В ПАПКУ УРОВНЕМ ВЫШЕ
 pwd
 ls
 ```
