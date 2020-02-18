@@ -306,7 +306,7 @@ cat NENE01729B.txt | cut -d. -f1 | sort | uniq | wc -l
 
 #### • Концентрация белков в пробах морской воды
 
-[ссылка на данные](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/FILES/north-pacific-gyre/2012-07-03)
+[ссылка на данные](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/FILES/north-pacific-gyre)
 
 Нелли - морской биолог. Недавно она вернулась из шестимесячной научной экспедиции в северной части Тихого океана, где она собирала биологические образцы желеподобного вида в [Большом тихоокеанском мусорном пятне](https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B5_%D1%82%D0%B8%D1%85%D0%BE%D0%BE%D0%BA%D0%B5%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B5_%D0%BC%D1%83%D1%81%D0%BE%D1%80%D0%BD%D0%BE%D0%B5_%D0%BF%D1%8F%D1%82%D0%BD%D0%BE). Всего ей удалось собрать 1520 проб, которые она должна была прогнать через специальный прибор, измеряющий относительное содержание 300 белков в каждой пробе и сохраняющий данные каждого измерения в отдельный файл. Затем Нелли нужно было проанализировать полученные результаты (1520 файлов) в программе `goostats`. По завершении анализа она собиралась опубликовать полученные результаты в специальном номере журнала *Aquatic Biology*. Для этого ей нужно было отправить свой манускрипт до конца месяца.
 
@@ -326,6 +326,6 @@ cat NENE01729B.txt | cut -d. -f1 | sort | uniq | wc -l
 
 #### • Файл со списком праймеров и их параметрами
 
-[ссылка на данные](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/tree/master/FILES/primers.txt)
+[ссылка на данные](https://raw.githubusercontent.com/vinni-bio/LEEBAO-BIOINFORMATICS/master/FILES/primers.txt)
 
 Включает набор из последовательностей 22 праймеров, созданных программой Primer3
