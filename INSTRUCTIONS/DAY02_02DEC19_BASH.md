@@ -6,28 +6,28 @@
 
 ## СОДЕРЖАНИЕ
 
-1. [Командная оболочка `BASH`](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#1-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-bash-bourne-again-shell)
+1. [Командная оболочка `BASH`](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#1-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BA%D0%B0-bash-bourne-again-shell)
 
-   1А. [Основные команды]()  
-   1Б. [Специальные символы в `BASH`]()  
-   1В. [Управление командной строкой `BASH` путем нажатия клавиш]()  
-   1Г. [Переменные среды `BASH` (избранные)]()  
-   1Д. [Символы подстановки (wildcards)]()  
+   1А. [Основные команды](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#1a-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B)  
+   1Б. [Специальные символы в `BASH`](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#1%D0%B1-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%8B-%D0%B2-bash)  
+   1В. [Управление командной строкой `BASH` путем нажатия клавиш](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#1%D0%B2-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%BE%D0%B9-bash-%D0%BF%D1%83%D1%82%D0%B5%D0%BC-%D0%BD%D0%B0%D0%B6%D0%B0%D1%82%D0%B8%D1%8F-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88)  
+   1Г. [Переменные среды `BASH` (избранные)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#1%D0%B3-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D1%81%D1%80%D0%B5%D0%B4%D1%8B-bash%D0%B8%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5)  
+   1Д. [Символы подстановки (wildcards)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#1%D0%B4-%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%8B-%D0%BF%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8-wildcards)  
    
 2. [УПРАЖНЕНИЯ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#2-%D1%83%D0%BF%D1%80%D0%B0%D0%B6%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F)
 
-   2А. [Вывод строки на экран](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B0-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%BD%D0%B0-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD)  
-   2Б. [Перемещение и операции с директориями](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B1-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D1%81-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D1%8F%D0%BC%D0%B8)  
-   2В. [Просмотр истории команд](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B2-%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4)  
-   2Г. [Создание и чтение файлов](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B3-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2)  
-   2Д. [Символы подстановки (wildcards)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B4-%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%8B-%D0%BF%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8-wildcards)  
-   2Е. [Вызов справки (help и man)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#e-%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2-%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8-help-%D0%B8-man)  
-   2Ë. [Удаление папок и файлов](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%C3%AB-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BF%D0%BE%D0%BA-%D0%B8-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2)  
-   2Ж. [Подстановки команд и меры предосторожности для новичков](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B6-%D0%BF%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4-%D0%B8-%D0%BC%D0%B5%D1%80%D1%8B-%D0%BF%D1%80%D0%B5%D0%B4%D0%BE%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B4%D0%BB%D1%8F-%D0%BD%D0%BE%D0%B2%D0%B8%D1%87%D0%BA%D0%BE%D0%B2)  
-   2З. [Проверка типа консоли](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B7-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%82%D0%B8%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D0%B8)  
-   2И. [Скачивание файлов из сети](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B8-%D1%81%D0%BA%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2-%D0%B8%D0%B7-%D1%81%D0%B5%D1%82%D0%B8)  
-   2Й. [Работа с файловыми строками](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%B9-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%8B%D0%BC%D0%B8-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B0%D0%BC%D0%B8)  
-   2К. [Канализация вывода команд (pipe)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#%D0%BA-%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4%D0%B0-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4-pipe)  
+   2А. [Вывод строки на экран](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#2%D0%B0-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%B8-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B9-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%BD%D0%B0-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD)  
+   2Б. [Перемещение и операции с директориями](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#2%D0%B1-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D1%81-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D1%8F%D0%BC%D0%B8)  
+   2В. [Просмотр истории команд](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#2%D0%B2-%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4)  
+   2Г. [Создание и чтение файлов](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#2%D0%B3-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2)  
+   2Д. [Символы подстановки (wildcards)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#2%D0%B4-%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%8B-%D0%BF%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8-wildcards)  
+   2Е. [Вызов справки (help и man)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#2e-%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2-%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8-help-%D0%B8-man)  
+   2Ë. [Удаление папок и файлов](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#2%C3%AB-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BF%D0%BE%D0%BA-%D0%B8-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2)  
+   2Ж. [Подстановки команд и меры предосторожности для новичков](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#2%D0%B6-%D0%BF%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4-%D0%B8-%D0%BC%D0%B5%D1%80%D1%8B-%D0%BF%D1%80%D0%B5%D0%B4%D0%BE%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B4%D0%BB%D1%8F-%D0%BD%D0%BE%D0%B2%D0%B8%D1%87%D0%BA%D0%BE%D0%B2)  
+   2З. [Проверка типа консоли](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#2%D0%B7-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%82%D0%B8%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D0%B8)  
+   2И. [Скачивание файлов из сети](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#2%D0%B8-%D1%81%D0%BA%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2-%D0%B8%D0%B7-%D1%81%D0%B5%D1%82%D0%B8)  
+   2Й. [Работа с файловыми строками](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#2%D0%B9-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%8B%D0%BC%D0%B8-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B0%D0%BC%D0%B8)  
+   2К. [Перенаправление стандартного вывода команд](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#2%D0%BA-%D0%BF%D0%B5%D1%80%D0%B5%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4%D0%B0-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4-pipe)  
 3. [ДАННЫЕ ДЛЯ ТРЕНИРОВКИ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#3-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8)
     * [Концентрация белков в пробах морской воды](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#-%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B1%D0%B5%D0%BB%D0%BA%D0%BE%D0%B2-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B1%D0%B0%D1%85-%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B9-%D0%B2%D0%BE%D0%B4%D1%8B)  
     * [Динамика изменений углекислого газа в зависимости от разнообразия тундровых растительных сообществ на Аляске и в Швеции (Shaver et al., 2007)](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY02_02DEC19_BASH.md#-%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D0%BA%D0%B0-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9-%D1%83%D0%B3%D0%BB%D0%B5%D0%BA%D0%B8%D1%81%D0%BB%D0%BE%D0%B3%D0%BE-%D0%B3%D0%B0%D0%B7%D0%B0-%D0%B2-%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8-%D0%BE%D1%82-%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D1%8F-%D1%82%D1%83%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D1%8B%D1%85-%D1%80%D0%B0%D1%81%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2-%D0%BD%D0%B0-%D0%B0%D0%BB%D1%8F%D1%81%D0%BA%D0%B5-%D0%B8-%D0%B2-%D1%88%D0%B2%D0%B5%D1%86%D0%B8%D0%B8-shaver-et-al-2007)
@@ -39,23 +39,23 @@
 
 #### 1A. Основные команды
 
-| ФАЙЛЫ | ДИРЕКТОРИИ | СИСТЕМА | УПРАВЛЕНИЕ |
+| ФАЙЛЫ | НАВИГАЦИЯ | СИСТЕМА | УПРАВЛЕНИЕ |
 | --------- | --------- | --------- | --------- |
-| `touch` – создание файла | `mkdir` – создание пустой папки | `uname` – информация | `which` – путь к команде |
-| `cat` – вывод строк файла | `rmdir` – удаление пустой папки | `hostname` – имя хоста | `chmod` – изменение прав |
+| `touch` – создание файла | `mkdir` – создание пустой директории | `uname` – информация | `which` – путь к команде |
+| `cat` – вывод строк файла | `rmdir` – удаление пустой директории | `hostname` – имя хоста | `chmod` – изменение прав |
 | `less` и `more` – чтение файла | `ls` – список содержимого | `whoami` – имя пользователя | `chown` – изменение владельца |
-| `nano` – текстовый редактор | `pwd` – путь к папке | `date` – дата и время | `tar` – архивация |
+| `nano`, `vim`, `emacs` – текстовые редакторы | `pwd` – путь к папке | `date` – дата и время | `tar` – архивация |
 | `file` – тип файла | `cd` – перемещние между директориями | `cal` – календарная дата | `gzip` – архивация |
-| `mv` – перемещение/переименование | | `top` – процессы в памяти | `ln` – создание ссылок |
-| `cp` – копирование | | `who` – пользователи в системе | `apt-get` – установка программ |
-| `rm` – удаление | | `id` – инфа о пользователе | `ssh` – удаленное подключение |
-| `find` – поиск | | `df` – место на диске | `make` – компиляция |
-| `head` – первые строки | `-` – предыдущая папка | `fdisk` – разделы диска | `pkill` – остановка процесса |
-| `tail` – конечные строки | `du` – размер папки | `ps` – активные процессы | `kill` – остановка программы |
+| `tr` – конвертация символов | `find` – поиск файлов по иерархии | `top` – процессы в памяти | `ln` – создание ссылок |
+| `sed`, `awk` – текстовые процессоры | `mv` – перемещение/переименование | `who` – пользователи в системе | `apt-get` – установка программ |
+|  | `cp` – копирование| `id` – инфа о пользователе | `ssh` – удаленное подключение |
+| `diff` – сравнивает строки в двух файлах | `rm` – удаление | `df` – место на диске | `make` – компиляция |
+| `head` – первые строки | | `fdisk` – разделы диска | `pkill` – остановка процесса |
+| `tail` – конечные строки | `du` – размер директории | `ps` – активные процессы | `kill` – остановка программы |
 | `wc` – счетчик | `wget` – скачивание | `lsof` – открытые файлы | `killall` – остановить все процессы |
 | `grep` – поиск строк | `curl` – скачивание | `alias` – сокращения команд | `fg` – запуск процесса |
 | `sort` – сортировка строк | | `clear` – очистка экрана | `bg` – запуск в фоновом режиме |
-| `uniq` – уникальные строки | | `man` – помощь по команде | `echo` – вывод в консоль |
+| `uniq` – уникальные строки (для сортированных данных) | | `man` – помощь по команде | `echo` – вывод в консоль |
 | `cut` –  разделение строк | `history` – история команд | `mount` – управление дисками | `env` – вывод всех переменных bash |
 
 #### 1Б. Специальные символы в `BASH` 
@@ -113,7 +113,8 @@
 
 #### 1Д. Символы подстановки (wildcards)
    `?` - шаблон заменяющий ровно один символ  
-   `*` – шаблон заменяющий любую последовательность символов  
+   `*` – шаблон заменяющий любую последовательность символов, начиная с нулевой  
+   `+` - последовательность из одного и более символов  
    `[]` - шаблон заменяющий любой из перечисленных в скобках символов  
    `{}` – задание диапазона или перечня символов для шаблона 
 
@@ -328,7 +329,7 @@ head NENE01729B.txt				# ВЫВОД ПЕРВЫХ 10 СТРОК
 head -n2NENE01729B.txt				# ВЫВОД ПЕРВЫХ 2 СТРОК
 tail -n2 NENE01729B.txt				# ВЫВОД ПОСЛЕДНИХ 5 СТРОК
 tail -n +2 NENE01729B.txt			# ВЫВОД ВСЕХ СТРОК КРОМЕ ПЕРВОЙ
-grep 22 NENE01729B.txt			# ПОИСК СТРОК ПО ПАТТЕРНУ
+grep 22 NENE01729B.txt				# ПОИСК СТРОК ПО ПАТТЕРНУ
 wc NENE01729B.txt				# СТАТИСТИКА ФАЙЛА
 wc -l NENE01729B.txt				# КОЛИЧЕСТВО СТРОК
 wc -w NENE01729B.txt				# КОЛИЧЕСТВО СЛОВ
