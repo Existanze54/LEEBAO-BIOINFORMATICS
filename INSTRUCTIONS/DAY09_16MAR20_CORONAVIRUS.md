@@ -2,7 +2,7 @@
 
 Хакатон по биоинформатике Лаборатории экологии и эволюционной биологии водных организмов ДВФУ
 
-## ДЕНЬ 09. АНАЛИЗ ГЕНОМА КОРОНАВИРУСОВ
+## ДЕНЬ 09. АНАЛИЗ КОРОНАВИРУСОВ
 
 ### Severe acute respiratory syndrome-related coronavirus (SARS-CoV-2)<br/>Острое респираторное инфекционное заболевание (ОРВИ)
 
@@ -26,5 +26,58 @@ alt="SARS coronavirus" width="600" border="5" />
 * nCoV-2019
 * BetaCov
 
+### ПРОВЕРЯЕМ ПУБЛИКАЦИИ В NCBI PUBMED
 
+##### 1. Сколько всего публикаций в 2020 году с "2019-nCoV" в заголовке статьи?
+```
+esearch -db pubmed -query "2019-nCoV[TITL] AND 2020[PDAT]"
+```
 
+##### 2. Скачиваем абстракты
+```
+esearch -db pubmed -query "2019-nCoV[TITL] AND 2020[PDAT]" | \
+efetch -format abstract -mode text > abstracts2020.txt
+```
+
+##### 3. Создаем список авторов
+```
+esearch -db pubmed -query "2019-nCoV[TITL] AND 2020[PDAT]" | \
+efetch -format xml | \
+xtract -pattern PubmedArticle -block Author -sep " " -tab "\n" -element LastName,ForeName | \
+sort | uniq -c | sort -nr | more
+```
+
+##### 4. Создаем список подразделений
+```
+esearch -db pubmed -query "2019-nCoV[TITL] AND 2020[PDAT]" | \
+efetch -format xml | \
+xtract -pattern PubmedArticle -block Author -sep " " -tab "\n" -element Affiliation | \
+sort | uniq -c | sort -nr | more
+```
+
+### СКАЧИВАЕМ ДАННЫЕ ИЗ NCBI
+
+##### 1. Создаем запрос для всех коронавирусов
+```
+esearch -db nucleotide -query "coronavirus"
+```
+
+##### 2. Создаем запрос для всех коронавирусов с фильтрацией по полноте генома и времени публикации
+```
+esearch -db nucleotide -query "coronavirus" | \
+efilter -query "complete genome[TITL]" -days 100
+```
+
+##### 3. Скачиваем описание последовательностей в формате генного банка
+```
+esearch -db nucleotide -query "coronavirus" | \
+efilter -query "complete genome[TITL]" -days 100 | \
+esummary -format gb -mode text > coronavirus.gb
+```
+
+##### 4. Скачиваем описание последовательностей в FASTA формате
+```
+esearch -db nucleotide -query "coronavirus" | \
+efilter -query "complete genome[TITL]" -days 100 | \
+efetch -format fasta > coronavirus.fasta
+```
