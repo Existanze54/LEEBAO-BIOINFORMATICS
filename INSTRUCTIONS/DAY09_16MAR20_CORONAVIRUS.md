@@ -4,7 +4,7 @@
 
 ## ДЕНЬ 09. АНАЛИЗ ГЕНОМА КОРОНАВИРУСОВ
 
-### Severe acute respiratory syndrome-related coronavirus (SARS-CoV-2) = Острое респираторное инфекционное заболевание (ОРВИ)
+### Severe acute respiratory syndrome-related coronavirus (SARS-CoV-2)<br/>Острое респираторное инфекционное заболевание (ОРВИ)
 
 <img src="https://www.viprbrc.org/brc/images/2019_nCoV_virion_genome.png" 
 alt="SARS coronavirus" width="600" border="5" />
@@ -18,6 +18,13 @@ alt="SARS coronavirus" width="600" border="5" />
 * [China National GeneBank: 2019-nCoV Database](https://db.cngb.org/datamart/disease/DATAdis19/)
 * [UniProt: Wuhan 2019-2020 Coronavirus](http://insideuniprot.blogspot.com/2020/02/wuhan-2019-2020-coronavirus-uniprotkb.html)
 * [World Health Organization (WHO): novel-coronavirus-2019](https://www.who.int/emergencies/diseases/novel-coronavirus-2019)
+
+### АЛЬТЕРНАТИВНЫЕ НАЗВАНИЯ ВИРУСА
+
+* SARS-CoV-2
+* 2019-nCoV
+* nCoV-2019
+* BetaCov
 
 
 

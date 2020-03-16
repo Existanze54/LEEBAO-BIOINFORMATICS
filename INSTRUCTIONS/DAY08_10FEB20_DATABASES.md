@@ -124,3 +124,5 @@ efetch -help
 xtract -help
 ```
 
+*esearch* --> *efilter* --> *efetch* --> *xtract*
+
