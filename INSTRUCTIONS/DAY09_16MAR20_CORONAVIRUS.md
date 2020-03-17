@@ -12,6 +12,7 @@ alt="SARS coronavirus" width="600" border="5" />
 ### ИНФОРМАЦИЯ ПО COVID-19
 
 * [Statistics: Information is Beautiful](https://informationisbeautiful.net/visualizations/covid-19-coronavirus-infographic-datapack/)
+* [Genomic epidemiology of novel coronavirus](https://nextstrain.org/ncov)
 * [NCBI: SARS-CoV-2](https://www.ncbi.nlm.nih.gov/genbank/sars-cov-2-seqs/)
 * [GISAID: Global Initiative on Sharing All Influenza Data](https://www.gisaid.org/)
 * [Virus Pathogen Resource: SARS-CoV-2](https://www.viprbrc.org/brc/home.spg?decorator=corona_ncov)
@@ -75,9 +76,20 @@ efilter -query "complete genome[TITL]" -days 100 | \
 esummary -format gb -mode text > coronavirus.gb
 ```
 
-##### 4. Скачиваем описание последовательностей в FASTA формате
+##### 4. Скачиваем последовательности в FASTA формате
 ```
 esearch -db nucleotide -query "coronavirus" | \
 efilter -query "complete genome[TITL]" -days 100 | \
 efetch -format fasta > coronavirus.fasta
 ```
+
+##### 5. Находим последовательности, опубликованные в научных статьях PubMed за последние 90 дней:
+```
+esearch -db pubmed -query "coronavirus" | \
+elink -related | \
+elink -target nucleotide | \
+efilter -query "complete genome[TITL] AND 28000:31000[SLEN]" -days 90 | \
+efetch -format docsum | \
+xtract -pattern DocumentSummary -element Id Title
+```
+

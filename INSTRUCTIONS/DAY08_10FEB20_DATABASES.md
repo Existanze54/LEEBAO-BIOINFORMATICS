@@ -70,14 +70,20 @@
 | Имя Поля  | Аббревиатура | Функция | Базы NCBI |
 | --------- | --------- | --------- | --------- | 
 | `[Accession]` | `[ACCN]` | Идентификатор NCBI | Все |
+| `[Affiliation]` | `[AFFL]` | Аффилиация | Все |
 | `[All Fields]` | `[ALL]` | Все поля | Все |
 | `[Author]` | `[AU]` / `[AUTH]` | Автор | Все |
+| `[Author - First]` | `[FAUT]` | Имя автора | Все |
+| `[Author - Last]` | `[LAUT]` | Фамилия автора | Все |
 | `[Feature Key]` | `[FKEY]` | Характеристики | Nucleotide, Protein, GSS |
 | `[Filter]`| `[FILT]` / `[SB]` | Фильтрация / Исключение | Все |
-| `[Genome Project]`|  | Числовой идентификатор геномного проекта | Все |
+| `[Genome Project]`| `[GPRJ]` | Числовой идентификатор геномного проекта | Все |
 | `[Issue]` | `[ISS]` | Номер журнала | Все |
 | `[Journal]` | `[JOUR]` | Журнал | Все |
 | `[Keyword]` | `[KYWD]` | Ключевое слово | Все |
+| `[Language]` | `[LANG]` | Язык публикации | PubMed |
+| `[Major Topic]` | `[MAJR]` | Основная тема | PubMed |
+| `[MeSH Terms]` | `[MESH]` | MeSH термины | PubMed |
 | `[Modification Date]` | `[MDAT]` | Дата последнего изменения | Все |
 | `[Molecular Weight]` | `[MOLWT]` | Молекулярный вес | Protein |
 | `[Organism]` | `[ORGN]` | Латинское или народное название организма | Все |
@@ -87,12 +93,16 @@
 | `[Properties]` | `[PROP]` | Свойства | Все |
 | `[Protein Name]` | `[PROT]` | Название белка | Все |
 | `[Publication Date]` | `[PDAT]` | Дата публикации | Все |
+| `[Publication Type]` | `[PTYP]` | Тип публикации | PubMed |
 | `[SeqID String]` | `[SQID]` | Идентификатор последовательности | Все |
 | `[Sequence Length]` | `[SLEN]` | Длина последовательности | Все |
+| `[Subheading]` | `[SUBH]` | Подзаголовок | PubMed |
 | `[Substance Name]` | `[SUBS]` | Название вещества | Все |
 | `[Text Word]` | `[WORD]` | Описание | Все |
 | `[Title]` | `[TI]` / `[TITL]` | Заголовок | Все |
-| `[TITL]` | `[VOL]` | Том | Все |
+| `[Title/Abstract]` | `[TIAB]` | Заголовок/абстракт | PubMed |
+| `[Volume]` | `[VOL]` | Том | Все |
+| `[Unique identifier]` | `[UID]` | Уникальный номер записи | Все |
 
 
 ### УПРАЖНЕНИЯ

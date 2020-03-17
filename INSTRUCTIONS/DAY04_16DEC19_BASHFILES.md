@@ -10,6 +10,8 @@
 2. [УПРАЖНЕНИЯ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY04_16DEC19_BASHFILES.md#2-%D1%83%D0%BF%D1%80%D0%B0%D0%B6%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F)
 3. [СЖАТИЕ ДАННЫХ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY04_16DEC19_BASHFILES.md#3-%D1%81%D0%B6%D0%B0%D1%82%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)
 4. [НАШ ПЕРВЫЙ СКРИПТ](https://github.com/vinni-bio/LEEBAO-BIOINFORMATICS/blob/master/INSTRUCTIONS/DAY04_16DEC19_BASHFILES.md#4-%D0%BD%D0%B0%D1%88-%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82)
+5. [ИЗМЕНЕНИЕ ПРАВ ПОЛЬЗОВАНИЯ ФАЙЛАМИ]()
+6. [ШЕБАНГ И СТРОКА ЗАПУСКА ИНТЕРПРЕТАТОРА СКРИПТА]()
 
 ### 1. РАЗМИНКА 
 
@@ -36,6 +38,19 @@ ls -al
 **Обновление гитхаб директории**
 ```
 git pull
+```
+
+**Поиск с помощью команды `find`**
+```
+find LEEBAO-BIOINFORMATICS
+find LEEBAO-BIOINFORMATICS -type f
+find LEEBAO-BIOINFORMATICS -type d
+find LEEBAO-BIOINFORMATICS -type f -name "NENE*.txt"
+find LEEBAO-BIOINFORMATICS -name "*.seq" -or -name "*.fas" -type f
+find LEEBAO-BIOINFORMATICS \( -name "NENE*.txt" -type f \) -or \( -name "north*" -type d \)
+find LEEBAO-BIOINFORMATICS -type f -name "NENE*.txt" -print
+find LEEBAO-BIOINFORMATICS -type f -name "NENE*.txt" -exec wc -l {} \;
+find LEEBAO-BIOINFORMATICS -type f -name "NENE*.txt" -delete
 ```
 
 ### 2. УПРАЖНЕНИЯ 
@@ -86,3 +101,36 @@ ls -al
 chmod 744 NENE.sh
 ./NENE.sh
 ```
+
+### 5. ИЗМЕНЕНИЕ ПРАВ ПОЛЬЗОВАНИЯ ФАЙЛАМИ
+```
+sudo chmod ugo+rwx path/to/file
+sudo chmod 744 path/to/file
+```
+##### Пояснение каждого аргумента команды:
+
+   `sudo` - запуск команды с правами администратора  
+   `chmod` – команда, которая изменяет права доступа к файлу  
+   `u` – главный пользователь  
+   `g` – пользовательская группа  
+   `o` – другие пользователи (гости)  
+   `+` – добавление прав  
+   `-` – ограничение прав  
+   `r` – право на чтение файла  
+   `w` - право на изменение файла  
+   `x` – право на запуск файла  
+   `400` – чтение главным пользователем (код)  
+   `200` – изменение главным пользователем (код)  
+   `100` – запуск главным пользователем (код)  
+   `700` – запуск, изменение и чтение главным пользователем (код)  
+   `600` – изменение и чтение главным пользователем (код)  
+   `500` – запуск и чтение главным пользователем (код)  
+   `744` – чтение всеми, а изменение и запуск только главным пользователем (код)  
+
+### 6. ШЕБАНГ И СТРОКА ЗАПУСКА ИНТЕРПРЕТАТОРА СКРИПТА
+```
+#! /bin/bash
+ИЛИ ЛУЧШЕ ВСЕГДА ИСПОЛЬЗОВАТЬ
+#! /usr/bin/env bash 
+```
+
